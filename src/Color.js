@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import './App.css';
-import AppHeader from './component/AppHeader';
+import './Color.css';
 import PicItem from './component/PicItem';
 import PicPost from './component/PicPost';
 import pics from './data/pics';
 
-function Example() {
+function Color() {
     const [selectedPic, setselectedPic] = useState(null);
 
     function onPicOpenClick(thePic) {
@@ -37,4 +36,4 @@ function Example() {
     );
 }
 
-export default Example;
+export default Color;
