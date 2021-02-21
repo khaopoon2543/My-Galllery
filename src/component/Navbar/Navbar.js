@@ -2,7 +2,6 @@ import "./Navbar.css";
 import React, { Component } from 'react';
 import { render } from "@testing-library/react";
 import { MenuItems } from "./MenuItems";
-import { Button } from "./Button"
 
 class Navbar extends Component {
     state = { clicked: false }
@@ -29,7 +28,6 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button>Contact</Button>
             </nav>
         )
     }

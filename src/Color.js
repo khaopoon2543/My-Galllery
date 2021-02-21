@@ -27,6 +27,11 @@ function Color() {
     return (
         <div className="App">
 
+            <div className="head-topic">
+                <h4>COLORS ARTS</h4>
+                <p>งานลงสีคัลเล่อฟูล</p>
+            </div>
+
             <div className="app-grid">
                 {picElements}
             </div>
