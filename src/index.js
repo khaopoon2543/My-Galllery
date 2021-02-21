@@ -8,6 +8,7 @@ import App from './App';
 import Color from './path/Color';
 import Home from './path/Home';
 import Line from './path/Line';
+import Commission from './path/Commission';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -16,7 +17,7 @@ ReactDOM.render(
   <Route path="/home" component={Home}/>
   <Route path="/color" component={Color}/>
   <Route path="/line" component={Line}/>
-
+  <Route path="/commission" component={Commission}/>
 
   </BrowserRouter>, document.getElementById('root')
 );

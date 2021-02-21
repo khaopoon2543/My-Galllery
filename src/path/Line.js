@@ -29,7 +29,7 @@ function Line() {
 
             <div className="head-topic">
                 <h4>LINE ARTS</h4>
-                <p>งานรัฟงานเส้นขาวดำจ้า</p>
+                <p>งานรัฟงานเส้นอย่างคูล</p>
             </div>
 
             <div className="app-grid">

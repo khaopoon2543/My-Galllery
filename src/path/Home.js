@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Home.css';
 
 function Home() {
@@ -7,7 +6,7 @@ function Home() {
     return (
         <div className="App">
 
-            <div className="center">
+            <div className="profilepic">
                 <img src="../home/me.jpg" alt="Avatar"/>
             </div>
 

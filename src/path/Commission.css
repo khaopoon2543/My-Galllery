@@ -1,25 +1,16 @@
-.profilepic img{
-    border-radius: 50%;
-    text-align: center;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    max-width: 300px;
-    height: auto;
-    padding: 30px;
-    margin-top: 20px;
-}
-
-.about-me {
+.status {
     text-align: center;
 }
 
-.about-me h4{
+.status h4{
     font-size: 40px;
+    margin-top: 30px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+
 }
 
-.about-me p{
+.status p{
     font-size: 20px;
     margin-top: 20px;
     padding-inline-start: 40px;
