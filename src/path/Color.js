@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './Color.css';
-import PicItem from './component/PicItem';
-import PicPost from './component/PicPost';
-import pics from './data/pics';
+import PicItem from '../component/PicItem';
+import PicPost from '../component/PicPost';
+import picscolor from '../data/picscolor';
 
 function Color() {
     const [selectedPic, setselectedPic] = useState(null);
@@ -15,7 +15,7 @@ function Color() {
         setselectedPic(null);
     }
 
-    const picElements = pics.map((pic, index) => {
+    const picElements = picscolor.map((pic, index) => {
         return <PicItem key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
 
@@ -28,7 +28,7 @@ function Color() {
         <div className="App">
 
             <div className="head-topic">
-                <h4>COLORS ARTS</h4>
+                <h4>COLOR ARTS</h4>
                 <p>งานลงสีคัลเล่อฟูล</p>
             </div>
 

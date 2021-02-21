@@ -2,16 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import {Route, Link, BrowserRouter} from 'react-router-dom';
 
 import App from './App';
-import Color from './Color';
-import {Route, Link, BrowserRouter} from 'react-router-dom';
+import Color from './path/Color';
+import Home from './path/Home';
+import Line from './path/Line';
 
 ReactDOM.render(
   <BrowserRouter>
 
   <Route path="/" component={App}/>
+  <Route path="/home" component={Home}/>
   <Route path="/color" component={Color}/>
+  <Route path="/line" component={Line}/>
+
 
   </BrowserRouter>, document.getElementById('root')
 );

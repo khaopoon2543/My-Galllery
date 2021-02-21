@@ -38,6 +38,7 @@
     color: white;
     text-align: center;
     padding: 10px;
+    display: none;
 }
 
 @media screen and (max-width: 960px) {
