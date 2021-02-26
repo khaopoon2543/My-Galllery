@@ -3,6 +3,7 @@ import './Color.css';
 import PicItem from '../component/PicItem';
 import PicPost from '../component/PicPost';
 import picsline from '../data/picsline';
+import Navbar from '../component/Navbar/Navbar';
 
 function Line() {
     const [selectedPic, setselectedPic] = useState(null);
@@ -26,7 +27,8 @@ function Line() {
 
     return (
         <div className="App">
-
+            <Navbar/>
+            
             <div className="head-topic">
                 <h4>LINE ARTS</h4>
                 <p>งานรัฟงานเส้นอย่างคูล</p>

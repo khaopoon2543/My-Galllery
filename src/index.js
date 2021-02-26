@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {Route, Link, BrowserRouter} from 'react-router-dom';
+import {Route, Switch, BrowserRouter} from 'react-router-dom';
 
 import App from './App';
 import Color from './path/Color';
@@ -12,13 +12,12 @@ import Commission from './path/Commission';
 
 ReactDOM.render(
   <BrowserRouter>
-
-  <Route path="/" component={App}/>
-  <Route path="/home" component={Home}/>
-  <Route path="/color" component={Color}/>
-  <Route path="/line" component={Line}/>
-  <Route path="/commission" component={Commission}/>
-
+  <Switch>
+    <Route path="/" exact component={Home}/>
+    <Route path="/color" exact component={Color}/>
+    <Route path="/line" exact component={Line}/>
+    <Route path="/commission" exact component={Commission}/>
+  </Switch>
   </BrowserRouter>, document.getElementById('root')
 );
 

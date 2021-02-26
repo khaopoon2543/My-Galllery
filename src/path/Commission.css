@@ -7,14 +7,95 @@
     margin-top: 30px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
-
 }
 
-.status p{
-    font-size: 20px;
-    margin-top: 20px;
+.status p {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    padding: 0.2rem;
+    margin: 1rem auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+.statusth p {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    padding: 0.2rem;
+    margin: 1rem auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.app-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    max-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
     padding-inline-start: 40px;
     padding-inline-end: 40px;
+  }
+  
+  @media screen and (max-width: 1500px) {
+      
+    .app-grid {
+        grid-template-columns: 1fr 1fr ;
+    }
+  
+  }
+  
+  @media screen and (max-width: 960px) {
+      
+    .app-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+  
+  }
+
+.inform {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #ffc1b6;
+    transition: all 0.2s ease;
+    padding: 15px 15px;
+    margin: 0.5rem auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 100px 100px 100px 100px;
+    
+}
+
+.inform p{
+    font-size: 20px;
+}
+
+.informdescription p{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+}
+
+.description p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    padding-inline-start: 80px;
+    padding-inline-end: 80px;
+}
+
+.contact {
+    text-align: center;
 }
 
 .contact i{
@@ -26,4 +107,3 @@
     margin-top: 30px;
     margin-right: 20px;
 }
-  

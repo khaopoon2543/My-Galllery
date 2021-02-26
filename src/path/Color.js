@@ -3,6 +3,7 @@ import './Color.css';
 import PicItem from '../component/PicItem';
 import PicPost from '../component/PicPost';
 import picscolor from '../data/picscolor';
+import Navbar from '../component/Navbar/Navbar';
 
 function Color() {
     const [selectedPic, setselectedPic] = useState(null);
@@ -26,7 +27,8 @@ function Color() {
 
     return (
         <div className="App">
-
+            <Navbar/>
+            
             <div className="head-topic">
                 <h4>COLOR ARTS</h4>
                 <p>งานลงสีคัลเล่อฟูล</p>

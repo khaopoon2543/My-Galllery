@@ -1,3 +1,4 @@
+import Navbar from '../component/Navbar/Navbar';
 import './Home.css';
 
 function Home() {
@@ -5,7 +6,7 @@ function Home() {
 
     return (
         <div className="App">
-
+            <Navbar/>
             <div className="profilepic">
                 <img src="../home/me.jpg" alt="Avatar"/>
             </div>
@@ -19,11 +20,8 @@ function Home() {
                     <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/mikomaki35"><i class="fab fa-instagram"></i></a>
                 </div>
-
             </div>
-
-           
-
+            
         </div>
     );
 }
