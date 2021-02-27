@@ -1,12 +1,12 @@
 .pic-item img{
     display: block;
     width: 100%;
+    height: auto;
 }
 
 .pic-item h4{
   display: none;
 }
-
 
 
 .pic-item-cms img{

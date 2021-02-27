@@ -48,7 +48,7 @@
   @media screen and (max-width: 1500px) {
       
     .app-grid {
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr ;
     }
   
   }
@@ -71,7 +71,7 @@
     margin: 0.5rem auto;
     margin-left: 5rem;
     margin-right: 5rem;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 10px 10px 10px 10px;
     
 }
 
@@ -92,6 +92,10 @@
     font-size: 16px;
     padding-inline-start: 80px;
     padding-inline-end: 80px;
+}
+
+.description .chat p{
+    color: #DC143C	;
 }
 
 .contact {

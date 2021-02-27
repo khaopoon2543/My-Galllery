@@ -10,7 +10,7 @@
   font-family: 'Kanit', sans-serif;
 }
 
-.app-grid{
+.app-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 16px;
@@ -23,9 +23,9 @@
 }
 
 @media screen and (max-width: 1500px) {
-    
+      
   .app-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr ;
   }
 
 }
