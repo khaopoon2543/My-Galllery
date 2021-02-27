@@ -111,3 +111,35 @@
     margin-top: 30px;
     margin-right: 20px;
 }
+
+  
+table{
+      font-size: 20px;
+      transition: 0.5s;
+      border-collapse: collapse;
+      border-radius: 10px ;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+}
+
+table  tr{
+    text-align: center;
+}
+table  tr.head{
+    background-color: #ffc1b6;
+    color: #ffffff;
+}
+
+table th,
+table td {
+    padding: 15px 55px; 
+}
+    
+table tr:nth-child(even) {
+    color: black;
+    background-color: #f2f2f2;
+  }

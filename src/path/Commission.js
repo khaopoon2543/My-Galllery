@@ -46,18 +46,43 @@ function Commission() {
             <div className="status">
                 <h4><i class="far fa-star"></i> COMMISSION <i class="far fa-star"></i></h4>
                 <br/>
-                <p>LINE</p>
             </div>     
 
-            <div className="inform">
-                <h6>Headshort : 250++</h6>
-                <h6>Bust Up : 300++</h6>
-                <h6>Half Body : 350++</h6>
-                <h6>Full Body : 450++</h6>
+            <div className="table">
+                <table>
+                    <tr className="head">
+                        <th>Style</th>
+                        <th>Line</th>
+                        <th>Color</th>
+                    </tr>
+                    <tr>
+                        <td>Headshot</td>
+                        <td>250</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>Bust Up</td>
+                        <td>300</td>
+                        <td>700</td>
+                    </tr>
+                    <tr>
+                        <td>Half Body</td>
+                        <td>350</td>
+                        <td>800</td>
+                    </tr>
+                    <tr>
+                        <td>Full Body</td>
+                        <td>450</td>
+                        <td>-</td>
+                    </tr>
+                </table>
             </div>
+
+            <div className="status">
+                <p>LINE</p>
+            </div>    
             <div className="informdescription">
-                <p>มีสองแบบให้เลือกค่า (ซ้าย) แบบเส้นดินสอ (ขวา) เส้นคมนิดหน่อย เราจะถมดำให้ตามภาพเลยค่า แต่ถ้าไม่เอาก็บอกได้นะคะ</p>
-                
+                <p>มีสองแบบให้เลือกค่า (ซ้าย) แบบเส้นดินสอ (ขวา) เส้นคมนิดหน่อย เราจะถมดำให้ตามภาพเลยค่า แต่ถ้าไม่เอาก็บอกได้นะคะ</p>   
             </div>
 
             <div className="app-grid">
@@ -70,21 +95,21 @@ function Commission() {
                 <p>COLOR</p>
             </div> 
             <div className="inform">
-                <h6>Headshot : 600++</h6>
+                <h6>Headshot</h6>
             </div>
             <div className="app-grid">
                 {picElementsHS}
             </div>
 
             <div className="inform">
-                <h6>Bust Up : 700++</h6>
+                <h6>Bust Up</h6>
             </div>
             <div className="app-grid">
                 {picElementsBU}
             </div>
 
             <div className="inform">
-                <h6>Half Body : 800++</h6>
+                <h6>Half Body</h6>
             </div>
             <div className="app-grid">
                 {picElementsHB}
