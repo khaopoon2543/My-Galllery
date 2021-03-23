@@ -43,15 +43,19 @@ function Commission() {
         <div className="App">
             <Navbar/>
 
-            <div className="status">
-                <h4><i class="far fa-star"></i> COMMISSION <i class="far fa-star"></i></h4>
-                <br/>
+            <br/>
+
+            <div className="head-topic">
+                <h4>C O M M I S S I O N</h4>
+                <p>คอมมิชชั่น</p>
             </div>     
+
+            <br/>
 
             <div className="table">
                 <table>
                     <tr className="head">
-                        <th>Style</th>
+                        <th>Styles</th>
                         <th>Line</th>
                         <th>Color</th>
                     </tr>
@@ -78,8 +82,18 @@ function Commission() {
                 </table>
             </div>
 
+            <div className="informdescription">
+                <p>*เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้นๆค่า</p>
+                <p>*ถ้ารายละเอียดเยอะขอเพิ่มราคาตามความเหมาะสมนะคะ(^-^;</p>
+            </div>
+
+            <br/>
+
+            <br/><hr class="dashed"></hr><br/>
+
+
             <div className="status">
-                <p>LINE</p>
+                <p>L I N E</p>
             </div>    
             <div className="informdescription">
                 <p>มีสองแบบให้เลือกค่า (ซ้าย) แบบเส้นดินสอ (ขวา) เส้นคมนิดหน่อย เราจะถมดำให้ตามภาพเลยค่า แต่ถ้าไม่เอาก็บอกได้นะคะ</p>   
@@ -89,27 +103,34 @@ function Commission() {
                 {picElementsLINE}
             </div>
 
-            <br/>
+            <br/><hr class="dashed"></hr><br/>
+
            
             <div className="status">
-                <p>COLOR</p>
+                <p>C O L O R</p>
             </div> 
+
+            <div className="informdescription">
+                <p>เราจะลงสีแบบทับเส้นตามรูปเราเลยค่า บอกโทนสีที่อยากให้ลงหรืออยากได้สไตล์แบบไหนบอกได้เลยค่า</p>  
+            </div>
+
+            <br/>
             <div className="inform">
-                <h6>Headshot</h6>
+                <p>H e a d s h o t</p>
             </div>
             <div className="app-grid">
                 {picElementsHS}
             </div>
 
             <div className="inform">
-                <h6>Bust Up</h6>
+                <p>B u s t   U p</p>
             </div>
             <div className="app-grid">
                 {picElementsBU}
             </div>
 
             <div className="inform">
-                <h6>Half Body</h6>
+                <p>H a l f   B o d y</p>
             </div>
             <div className="app-grid">
                 {picElementsHB}
@@ -118,30 +139,31 @@ function Commission() {
             {picPost}
             <br/>
 
+
             <div className="statusth">
                 <p>รายละเอียดเพิ่มเติม</p>
-            </div> 
+            </div>
+            <br/> 
             <div className="description">
-                <p>*สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณไหนได้เลยค่า</p>
-                <p>*ลงสีพื้นหลังแบบตัวอย่างให้ฟรีค่า</p>
-                <p>*ไฟล์ภาพ 2048*2048 px (จะปรับตามความเหมาะสมของภาพค่า)</p>
-                <p>*เราจะส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
+                <div className="chat">
+                    <p>*สามารถแก้ได้ทั้งหมด 3 ครั้งค่า (หลังจากนี้จะขอเพิ่มครั้งละ 50 นะคะ แต่ถ้าเราเข้าใจบรีฟผิดเองเราไม่เก็บค่า)</p>
+                    <p>*ราคานี้ไม่ใช้สำหรับเชิงพาณิชย์นะคะ (สำหรับเชิงพาณิชย์ราคาจะ*2 จากราคาเดิมค่า)</p>
+                    <p>*ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
+                    <p>*ธนาคารกสิกรไทย / TrueWallet(+15)</p>
+                </div>
                 <br/>
                 <p>☆ขั้นตอนการทำงาน☆</p>
                 <p>บรีฟงาน ตกลงราคา - โอนเงินครึ่ง/เต็มจำนวน - ร่างภาพ(ส่งให้ดู) - ตัดเส้น ลงสี(ส่งให้ดู) - ส่งงานทางอีเมล</p>
                 <br/>
-                <p>*ถ้ารายละเอียดเยอะขอเพิ่มราคาตามความเหมาะสมนะคะ(^-^;</p>
-                <p>*สามารถแก้ได้ทั้งหมด 3 ครั้งค่า (หลังจากนี้จะขอเพิ่มครั้งละ 50 นะคะ แต่ถ้าเราเข้าใจบรีฟผิดเองเราไม่เก็บค่า)</p>
+                <p>*สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณไหนได้เลยค่า</p>
+                <p>*ลงสีพื้นหลังแบบตัวอย่างให้ฟรีค่า</p>
                 <br/>
-                <div className="chat">
-                    <p>*เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้นๆค่า</p>
-                    <p>*ราคานี้ไม่ใช้สำหรับเชิงพาณิชย์นะคะ (สำหรับเชิงพาณิชย์ราคาจะ*2 จากราคาเดิมค่า)</p>
-                    <p>*ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
-                    <p>*ธนาคารกสิกรไทย TrueWallet(+15)</p>
-                </div>
+                <p>*ไฟล์ภาพเราจะปรับตามความเหมาะสมของภาพค่า / Resolution 300dpi</p>
+                <p>*เราจะส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
                 <br/>
                 <p>มีอะไรอยากสอบถามเพิ่มเติมถามได้เลยนะคะ(^○^)</p>
             </div>
+            <br/>
 
             <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
@@ -150,7 +172,6 @@ function Commission() {
             </div>
             
             <br/><br/><br/>
-
 
         </div>
     );

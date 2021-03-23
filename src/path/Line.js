@@ -29,15 +29,23 @@ function Line() {
         <div className="App">
             <Navbar/>
             
+            <br/>
             <div className="head-topic">
-                <h4>LINE ARTS</h4>
+                <h4>L I N E   A R T S</h4>
                 <p>งานรัฟงานเส้นอย่างคูล</p>
             </div>
+            <br/>
 
             <div className="app-grid">
                 {picElements}
             </div>
             {picPost}
+
+            <br/>
+            <div className="credit">
+                <h5>@kaopuny</h5>
+            </div>
+            <br/><br/><br/>
 
         </div>
     );

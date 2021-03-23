@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect , useRef} from 'react';
 import './Color.css';
 import PicItem from '../component/PicItem';
 import PicPost from '../component/PicPost';
@@ -25,19 +25,54 @@ function Color() {
         picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick}/>
     }
 
+    const [postToShow, setpostToShow] = useState(null);
+
+    const postsPerPage = 12
+    let arrayForHoldingPosts = []
+    const ref = useRef(postsPerPage)
+    const loopWithSlice = (start, end) => {
+        const slicedPosts = picElements.slice(start, end)
+        arrayForHoldingPosts = arrayForHoldingPosts.concat(slicedPosts)
+        setpostToShow(arrayForHoldingPosts)
+    }
+    useEffect(() => {
+        loopWithSlice(0, postsPerPage)
+    }, [])
+
+    const handleShowMorePosts = () => {
+        loopWithSlice(ref, ref.current + postsPerPage)
+        ref.current += postsPerPage
+    }
+
     return (
         <div className="App">
             <Navbar/>
-            
+
+            <br/>
             <div className="head-topic">
-                <h4>COLOR ARTS</h4>
+                <h4>C O L O R   A R T S</h4>
                 <p>งานลงสีคัลเล่อฟูล</p>
             </div>
+            <br/>
 
             <div className="app-grid">
-                {picElements}
+                {postToShow}
             </div>
             {picPost}
+
+            <br/>
+
+            <div className="center">
+                <button onClick={handleShowMorePosts}>Load More</button>
+            </div>
+
+            <br/><br/><br/>
+
+            <div className="credit">
+                <h5>@kaopuny</h5>
+            </div>
+
+            <br/><br/><br/>
 
         </div>
     );
