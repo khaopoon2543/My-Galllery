@@ -12,7 +12,7 @@
 }
 
 .navbar-logo {
-  color:black;
+  color:#262223;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -35,14 +35,14 @@
 }
 
 .nav-links {
-  color: black;
+  color: #262223;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-  color: white;
-  background-color: black;
+  color: #DDC6B6;
+  background-color: #262223;
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 100px;
@@ -70,17 +70,16 @@
     position: absolute;
     top: 70px;
     opacity: 0;
-    right: -100%;
+    left: -100%;
 
     transition: all 0.5s ease-in-out ;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
   }
 
   .nav-menu.active {
-    background: #fff;
+    background: #ffff;
     opacity: 1;
-    right: 0;
-    margin-right: 0;
+    left: 0;
     transition: all 0.5s ease-in-out ;
   }
 
@@ -93,7 +92,7 @@
   }
 
   .nav-links:hover {
-    background-color: black;
+    background-color: #262223;
     border-radius: 0;
   }
 

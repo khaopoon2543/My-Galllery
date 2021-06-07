@@ -1,5 +1,6 @@
 .app-grid{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 16px;
@@ -8,45 +9,38 @@
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
-    padding-inline-start: 80px;
-    padding-inline-end: 80px;
-  }
-  
-  @media screen and (max-width: 1500px) {
-      
-    .app-grid {
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
-  
-  }
-  
-  @media screen and (max-width: 960px) {
-      
-    .app-grid {
-        grid-template-columns: 1fr 1fr;
-        padding-inline-start: 40px;
-        padding-inline-end: 40px;
-    }
-  
-  }
+    padding-inline-start: 15%;
+    padding-inline-end: 15%;
+    
+}
 
-.status {
+@media screen and (max-width: 750px) { 
+    .app-grid {
+        grid-template-columns: 1fr 1fr; 
+        padding-inline-start: 5%;
+        padding-inline-end: 5%; 
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.linecolor {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.status h4{
+.linecolor h4{
     font-size: 40px;
     margin-top: 30px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
 }
 
-.status p {
-    font-size: 40px;
-    color: rgb(124, 112, 112);
+.linecolor p {
+    font-size: 50px;
+    color: #262223;
     font-weight: bold;
     padding: 0.5rem;
     text-align: center;
@@ -54,95 +48,210 @@
     margin: 1rem auto;
     margin-left: 5rem;
     margin-right: 5rem;
-  }
-
-.statusth p {
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 40px;
-    color: white;
-    background-color: rgb(124, 112, 112);
-    padding: 0.2rem;
-    margin: 1rem auto;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-bottom: -10px;
 }
 
-.inform {
-    font-size: 40px;
-    text-align: center;
-    color: black;
-    border-radius: 100px;
-    padding: 15px 60px;
-    margin: 0.5rem auto;
-    margin-left: 6rem;
-    margin-right: 6rem;  
+.type_color {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
-.inform p{
-    font-size: 20px;
+.type_color p{
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    background-color: #262223;
+    color: #DDC6B6;
+    padding: 5px;
+} 
+
+@media screen and (max-width: 960px) {
+      
+    .linecolor p {
+        font-size: 50px;
+    }
+    .type_color p{
+        font-size: 30px;
+    }
+
 }
 
 .informdescription p{
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Prompt', sans-serif;
     text-align: center;
-    font-size: 16px;
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
-}
-
-.description p{
-    font-family: 'Kanit', sans-serif;
     font-size: 16px;
     padding-inline-start: 80px;
     padding-inline-end: 80px;
 }
 
-.description .chat p{
-    color: #DC143C	;
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.etc{
+    background-color: #262223;
+    margin: 1rem auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
 
-.contact {
+.etc_topic h1{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: white;
+}
+
+.etc_topic#process h1{
+    color: #262223;
+    font-weight: 900;
+}
+
+.etc p{
+    font-family: 'Prompt', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+.etc .red p{
+    color: #DDC6B6	;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.etc#process {
+    background-color: #DDC6B6;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    row-gap: 16px;
+    max-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.process{
     text-align: center;
 }
 
-.contact i{
+.process i{
+    text-align: center;
     font-size: 30px;
     color: white;
-    background-color: #ffc1b6;
+    background-color: #262223;
     border-radius: 50%;
     padding: 20px;   
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 10px;
 }
 
+.process p{
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    background-color: #ffff;
+    color: #262223;
+    font-size: 25px;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 10px;
+}
+
+.process h4{
+    font-family: 'Prompt', sans-serif;
+    text-align: left;
+    color: #262223;
+    margin-top: 10px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;   
+}
+
+.process h4 a{
+    font-weight: 900;
+}
+
+.process h4#underline{
+    display: inline;
+    color: #262223;
+    background-color: #FDEBD3;
+    padding: auto;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+}
+
+
+@media screen and (max-width: 1200px) {  
+    .etc {
+        margin-left: 10%;
+        margin-right: 10%;
+    }  
+    .process-grid {
+        grid-template-columns: 1fr ;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+@media screen and (max-width: 750px) {   
+    .etc {
+        margin-left: 5%;
+        margin-right: 5%;
+    } 
+    .process-grid {
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.pic_scale {
+    text-align: left;  
+    max-width: 40%;
+    padding-inline-start: 10%;
+}
+
+.table_edit {
+    float: right; 
+    padding-inline-end: 10%; 
+}
   
 table{
-      font-size: 20px;
-      transition: 0.5s;
-      border-collapse: collapse;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-      margin-left: auto;
-      margin-right: auto;
-      width: auto;
-      
+    font-size: 20px;
+    transition: 0.5s;
+    margin-bottom: 3rem;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
 }
 
 table  tr{
     text-align: center;
 }
 table  tr.head{
-    background-color: rgb(124, 112, 112);
-    color: #ffff;
+    background-color: #262223;
+    color: #DDC6B6;
     font-size: 30px;
 }
 
-table th,
-table td {
-    padding: 15px 55px; 
+table th, table td {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 100;
+    padding: 15px 70px; 
 }
     
 table tr:nth-child(even) {
@@ -150,6 +259,108 @@ table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+.text_bottom_table p{
+    font-family: 'Prompt', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+    color: #31675C;
+}
+
+.text_bottom_table {
+    background-color: #c7e4de;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    margin-top: -20px;
+
+}
+
+
+@media screen and (max-width: 1250px) {
+    .table_edit {
+        float: none;
+        padding-inline-end: 0%;
+    }
+    table {
+        width:80%; 
+        margin-left:10%; 
+        margin-right:10%;
+    }
+    .pic_scale {
+        max-width: 40%;
+        padding-inline-start: 0%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .text_bottom_table {
+        padding-inline-start: 10%;
+        padding-inline-end: 10%;
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+  
+}
+
+
+@media screen and (max-width: 750px) { 
+    .pic_scale {
+        max-width: 80%;
+    } 
+    .text_bottom_table {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    table  tr.head{
+        font-size: 20px;
+    }
+    table{
+        font-size: 20px;
+        width: 90%; 
+        margin-left:5%; 
+        margin-right:5%;
+    }
+    table th, table td {
+        padding: 15px 20px; 
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.app-grid#bank_logo {
+    grid-template-columns: 1fr 1fr;  
+    max-width: 50%;
+}
+
+@media screen and (max-width: 750px) {
+    .app-grid#bank_logo {
+        max-width: 40%;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
 hr.dashed {
-    border-top: 3px dotted rgb(124, 112, 112);
+    border-top: 3px double #DDC6B6;
+    margin-left: 10%;
+    margin-right: 10%;
 } 
+
+/*------------------------------------------------------------------------------------------------------*/
+  
+.contact {
+    text-align: center;
+}
+
+.contact i{
+    font-size: 30px;
+    color: #DDC6B6;
+    background-color: #262223;
+    border-radius: 50%;
+    padding: 20px;   
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+}

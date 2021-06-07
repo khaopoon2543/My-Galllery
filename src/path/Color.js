@@ -50,7 +50,7 @@ function Color() {
 
             <br/>
             <div className="head-topic">
-                <h4>C O L O R   A R T S</h4>
+                <h4>C O L O R F U L</h4>
                 <p>งานลงสีคัลเล่อฟูล</p>
             </div>
             <br/>

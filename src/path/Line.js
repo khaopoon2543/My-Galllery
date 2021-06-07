@@ -31,7 +31,7 @@ function Line() {
             
             <br/>
             <div className="head-topic">
-                <h4>L I N E   A R T S</h4>
+                <h4>S K E T C H</h4>
                 <p>งานรัฟงานเส้นอย่างคูล</p>
             </div>
             <br/>

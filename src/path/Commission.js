@@ -2,10 +2,10 @@ import { useState } from 'react';
 import Navbar from '../component/Navbar/Navbar';
 import PicItemCMS from '../component/PicItemCMS';
 import PicPost from '../component/PicPost';
-import picsheadshot from '../data/picsComHS';
-import picsbustup from '../data/picsComBU';
-import picshalfbody from '../data/picsComHB';
+import picscolor from '../data/picsComCOLOR';
+import picsScale from '../data/picsScale';
 import picslines from '../data/picsComLINE';
+import picsBankLogo from '../data/picsComBankLogo';
 
 import './Commission.css';
 
@@ -23,13 +23,13 @@ function Commission() {
     const picElementsLINE = picslines.map((pic, index) => {
         return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
-    const picElementsHS = picsheadshot.map((pic, index) => {
+    const picElementsCOLOR = picscolor.map((pic, index) => {
         return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
-    const picElementsBU = picsbustup.map((pic, index) => {
+    const picElementsScale = picsScale.map((pic, index) => {
         return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
-    const picElementsHB = picshalfbody.map((pic, index) => {
+    const picElementsBankLogo = picsBankLogo.map((pic, index) => {
         return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
 
@@ -50,53 +50,62 @@ function Commission() {
                 <p>คอมมิชชั่น</p>
             </div>     
 
-            <br/>
+            <br/><br/>
 
-            <div className="table">
-                <table>
-                    <tr className="head">
-                        <th>Styles</th>
-                        <th>Line</th>
-                        <th>Color</th>
-                    </tr>
-                    <tr>
-                        <td>Headshot</td>
-                        <td>250</td>
-                        <td>600</td>
-                    </tr>
-                    <tr>
-                        <td>Bust Up</td>
-                        <td>300</td>
-                        <td>700</td>
-                    </tr>
-                    <tr>
-                        <td>Half Body</td>
-                        <td>350</td>
-                        <td>800</td>
-                    </tr>
-                    <tr>
-                        <td>Full Body</td>
-                        <td>450</td>
-                        <td>-</td>
-                    </tr>
-                </table>
+            <div className="table_edit">
+                <div className="table">
+                    <table>
+                        <tr className="head">
+                            <th>SCALE</th>
+                            <th>SKETCH</th>
+                            <th>COLOR</th>
+                        </tr>
+                        <tr>
+                            <td>Headshot</td>
+                            <td>300+</td>
+                            <td>500+</td>
+                        </tr>
+                        <tr>
+                            <td>Bust Up</td>
+                            <td>350+</td>
+                            <td>700+</td>
+                        </tr>
+                        <tr>
+                            <td>Half Body</td>
+                            <td>400+</td>
+                            <td>900+</td>
+                        </tr>
+                        <tr>
+                            <td>Knee Up</td>
+                            <td>500+</td>
+                            <td>1000+</td>
+                        </tr>
+                        <tr>
+                            <td>Full Body</td>
+                            <td>550+</td>
+                            <td>1200+</td>
+                        </tr>
+                    </table>
+                </div>
+                <div className="text_bottom_table">
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้ไม่ใช่สำหรับเชิงพาณิชย์นะคะ เป็นราคาสำหรับ personal use อย่างเดียวค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้นๆค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจเปลี่ยนไปตามเวลาดังนั้นขอให้ยึดลายเส้นล่าสุดที่เราโพสเป็นหลักนะคะ</p>
+                </div><br/><br/>
+            </div>
+            <div className="pic_scale">
+                {picElementsScale}
             </div>
 
-            <div className="informdescription">
-                <p>*เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้นๆค่า</p>
-                <p>*ถ้ารายละเอียดเยอะขอเพิ่มราคาตามความเหมาะสมนะคะ(^-^;</p>
-            </div>
-
-            <br/>
-
+            <br/><br/>
             <br/><hr class="dashed"></hr><br/>
 
-
-            <div className="status">
-                <p>L I N E</p>
+            <div className="linecolor">
+                <p>SKETCH</p>
             </div>    
             <div className="informdescription">
-                <p>มีสองแบบให้เลือกค่า (ซ้าย) แบบเส้นดินสอ (ขวา) เส้นคมนิดหน่อย เราจะถมดำให้ตามภาพเลยค่า แต่ถ้าไม่เอาก็บอกได้นะคะ</p>   
+                <p>เป็นเส้นรัฟนะคะ เราจะเก็บเส้นให้แล้วก็ถมดำให้ตามประมาณภาพตัวอย่างเลยค่า</p>   
             </div>
 
             <div className="app-grid">
@@ -106,72 +115,96 @@ function Commission() {
             <br/><hr class="dashed"></hr><br/>
 
            
-            <div className="status">
-                <p>C O L O R</p>
+            <div className="linecolor">
+                <p>COLOR</p>
             </div> 
 
             <div className="informdescription">
-                <p>เราจะลงสีแบบทับเส้นตามรูปเราเลยค่า บอกโทนสีที่อยากให้ลงหรืออยากได้สไตล์แบบไหนบอกได้เลยค่า</p>  
+                <p>เราจะลงสีแบบทับเส้นนะคะ อยากได้โทนสีแบบไหนหรืออยากได้สไตล์แบบไหนก็บอกเราได้เลยค่า</p>  
             </div>
 
             <br/>
-            <div className="inform">
-                <p>H e a d s h o t</p>
-            </div>
+           
             <div className="app-grid">
-                {picElementsHS}
-            </div>
-
-            <div className="inform">
-                <p>B u s t   U p</p>
-            </div>
-            <div className="app-grid">
-                {picElementsBU}
-            </div>
-
-            <div className="inform">
-                <p>H a l f   B o d y</p>
-            </div>
-            <div className="app-grid">
-                {picElementsHB}
-            </div>
+                {picElementsCOLOR}
+            </div><br/>
 
             {picPost}
+
+            <div className="etc" id="process">
+                <div className="etc_topic" id="process">
+                    <h1>WORK PROCESS</h1>
+                </div>
+                <div className="process-grid">
+                    <div className="process"> 
+                        <i class="fas fa-list-alt"></i> 
+                        <p>1.บรีฟงาน</p>
+                        <h4>แจ้งสเกลภาพที่ต้องการ รายละเอียดของตัวละครต่าง ๆ ทาง IB หรือ DM ได้เลยค่า 
+                        <h4 id="underline"> ในส่วนของการบรีฟท่าทางของตัวละคร เราขอรบกวนไม่นำงานของนักวาดท่านอื่นมาบรีฟนะคะ </h4>อาจจะเขียนอธิบายหรือวาดเป็นน้องก้างปลาง่ายๆมาก็ได้ค่า
+                        </h4>
+                    </div>
+                    
+                    <div className="process"> 
+                        <i class="fas fa-comment-dollar"></i> 
+                        <p>2.โอนเงิน</p>
+                        <h4>เมื่อตกลงราคากันเรียบร้อยแล้วก็สามารถชำระเงินได้เลยค่ะ <h4 id="underline">ถ้าราคารวมทั้งหมดมากกว่า 1000 บาทสามารถจ่าย 50% ก่อนได้นะคะ</h4> เราจะเริ่มงานหลังชำระเงินเรียบร้อยแล้วนะคะ</h4>
+                    </div>
+
+                    <div className="process"> 
+                        <i class="fas fa-pencil-alt"></i> 
+                        <p>3.ร่างภาพ</p>
+                        <h4>เมื่อชำระเงินและถึงคิวลูกค้าแล้ว <h4 id="underline">เราจะร่างภาพตามบรีฟแล้วจะส่งให้ตรวจดูค่า</h4> (ในขั้นตอนนี้สำหรับงาน Sketch เมื่อลูกค้าตรวจดูและพอใจแล้วเราก็จะส่งงานให้เลยค่า)</h4>
+                    </div>
+
+                    <div className="process"> 
+                        <i class="fas fa-palette"></i> 
+                        <p>4.ลงสี</p>
+                        <h4>เมื่อภาพร่างผ่านแล้ว <h4 id="underline">เราก็จะลงสีคร่าว ๆ แล้วส่งให้ตรวจดูอีกครั้งนะคะ</h4> จากนั้นถ้าลูกค้าโอเคแล้วเราก็จะเริ่มทับเส้นเก็บงานให้เรียบร้อยค่า</h4>
+                    </div>
+
+                    <div className="process"> 
+                        <i class="fas fa-paper-plane"></i> 
+                        <p>5.ส่งงาน</p>
+                        <h4>เมื่อเราเก็บงานเสร็จแล้ว <h4 id="underline">เราจะส่งภาพที่เสร็จแล้วให้ตรวจดูอีกครั้งนะคะ</h4> จากนั้นถ้าลูกค้าพอใจกับงานเรียบร้อยแล้ว เราก็จะส่งงานให้ผ่านทาง E-mail หรือ google drive ให้เลยค่า</h4>
+                    </div>
+                </div>
+            </div>
+
             <br/>
 
-
-            <div className="statusth">
-                <p>รายละเอียดเพิ่มเติม</p>
-            </div>
-            <br/> 
-            <div className="description">
-                <div className="chat">
-                    <p>*สามารถแก้ได้ทั้งหมด 3 ครั้งค่า (หลังจากนี้จะขอเพิ่มครั้งละ 50 นะคะ แต่ถ้าเราเข้าใจบรีฟผิดเองเราไม่เก็บค่า)</p>
-                    <p>*ราคานี้ไม่ใช้สำหรับเชิงพาณิชย์นะคะ (สำหรับเชิงพาณิชย์ราคาจะ*2 จากราคาเดิมค่า)</p>
-                    <p>*ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
-                    <p>*ธนาคารกสิกรไทย / TrueWallet(+15)</p>
+            <div className="etc">
+                <div className="etc_topic">
+                    <h1>TERMS OF SERVICE</h1>
                 </div>
                 <br/>
-                <p>☆ขั้นตอนการทำงาน☆</p>
-                <p>บรีฟงาน ตกลงราคา - โอนเงินครึ่ง/เต็มจำนวน - ร่างภาพ(ส่งให้ดู) - ตัดเส้น ลงสี(ส่งให้ดู) - ส่งงานทางอีเมล</p>
+                <div className="red">
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เราไม่ใช้อนุญาตให้นำงานไปใช้เชิงพาณิชย์นะคะ ตอนนี้ขอเปิดสำหรับ personal use อย่างเดียวนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> สามารถแก้ได้รวมทั้งหมด 5 ครั้งนะคะ แต่ถ้าเราวาดสเกลผิดปกติหรือวาดไม่ตรงบรีฟเองเราไม่นับค่า </p>
+                    <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยค่า</p>
+                    <br/>
+                    <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์ (*ไม่รับงานเร่งนะคะ*)</p>
+                    <p><i class="fas fa-dot-circle"></i> ธนาคารกสิกรไทย / TrueWallet (+15)</p>
+                </div>
                 <br/>
-                <p>*สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณไหนได้เลยค่า</p>
-                <p>*ลงสีพื้นหลังแบบตัวอย่างให้ฟรีค่า</p>
+                <p><i class="fas fa-dot-circle"></i> ไฟล์ภาพเราจะปรับตามความเหมาะสมของภาพนะคะ โดยปกติจะใช้ขนาด 1500*1500px และ 1500*2000px / Resolution 300dpi</p>
+                <p><i class="fas fa-dot-circle"></i> แต่ถ้าต้องการขนาดอื่นสามารถบอกขนาดไฟล์ภาพที่ต้องการกับเราก่อนเริ่มงานได้เลยค่า</p>
+                <p><i class="fas fa-dot-circle"></i> เราจะส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
                 <br/>
-                <p>*ไฟล์ภาพเราจะปรับตามความเหมาะสมของภาพค่า / Resolution 300dpi</p>
-                <p>*เราจะส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
+                <p><i class="fas fa-dot-circle"></i> สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณไหนได้เลยค่า</p>
+                <p><i class="fas fa-dot-circle"></i> ลงสีพื้นหลังแบบตัวอย่างหรือแบบง่าย ๆ ให้ฟรีค่า</p>
+                <p><i class="fas fa-dot-circle"></i> มีอะไรอยากสอบถามเพิ่มเติมติดต่อเรามาได้เลยนะคะ(^○^)</p>
                 <br/>
-                <p>มีอะไรอยากสอบถามเพิ่มเติมถามได้เลยนะคะ(^○^)</p>
             </div>
-            <br/>
+
+            <div className="app-grid" id="bank_logo">
+                {picElementsBankLogo}
+            </div>
 
             <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/mikomaki35"><i class="fab fa-instagram"></i></a>
             </div>
-            
-            <br/><br/><br/>
 
         </div>
     );
