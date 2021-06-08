@@ -18,7 +18,6 @@ ReactDOM.render(
     <Route path="/color" exact component={Color}/>
     <Route path="/line" exact component={Line}/>
     <Route path="/commission" exact component={Commission}/>
-    <Route path="/status" exact component={Status}/>
   </Switch>
   </BrowserRouter>, document.getElementById('root')
 );

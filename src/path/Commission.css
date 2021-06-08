@@ -338,19 +338,6 @@ table tr:nth-child(even) {
 
 /*------------------------------------------------------------------------------------------------------*/
 
-.app-grid#bank_logo {
-    grid-template-columns: 1fr 1fr;  
-    max-width: 50%;
-}
-
-@media screen and (max-width: 800px) {
-    .app-grid#bank_logo {
-        max-width: 40%;
-    }
-}
-
-/*------------------------------------------------------------------------------------------------------*/
-
 hr.dashed {
     border-top: 3px double #DDC6B6;
     margin-left: 10%;
@@ -372,4 +359,39 @@ hr.dashed {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 100px;
+}
+
+.queue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.queue a{
+    font-family: 'Prompt', sans-serif;
+    background-color: #262223;
+    color: #DDC6B6;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 20%;
+    padding: 15px 60px;
+}
+
+.queue a:hover {
+    background-color: #DDC6B6;
+    color: #262223;
+    transition: all 0.3s ease-out ;
+}
+
+@media screen and (max-width: 1250px) {
+    .queue a{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .queue a{
+        width: 50%;
+    }
 }

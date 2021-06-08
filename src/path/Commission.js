@@ -5,7 +5,6 @@ import PicPost from '../component/PicPost';
 import picscolor from '../data/picsComCOLOR';
 import picsScale from '../data/picsScale';
 import picslines from '../data/picsComLINE';
-import picsBankLogo from '../data/picsComBankLogo';
 
 import './Commission.css';
 
@@ -29,10 +28,6 @@ function Commission() {
     const picElementsScale = picsScale.map((pic, index) => {
         return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
-    const picElementsBankLogo = picsBankLogo.map((pic, index) => {
-        return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
-    });
-
 
     let picPost = null;
     if (!!selectedPic) {
@@ -196,10 +191,12 @@ function Commission() {
                 <br/>
             </div>
 
-            <div className="app-grid" id="bank_logo">
-                {picElementsBankLogo}
-            </div>
+            <br/><hr class="dashed"></hr><br/><br/><br/>
 
+            <div className="queue">
+                <a href="https://docs.google.com/spreadsheets/d/1xZ7PbGFoHv0L9RyDI7TWlDJMl6l6vjACCkNOcOppdTI/edit#gid=0">Queue & Status</a>
+            </div>
+            <br/>
             <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>
