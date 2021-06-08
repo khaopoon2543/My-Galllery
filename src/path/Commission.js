@@ -50,7 +50,7 @@ function Commission() {
                 <p>คอมมิชชั่น</p>
             </div>     
 
-            <br/><br/>
+            <br/>
 
             <div className="table_edit">
                 <div className="table">
@@ -63,27 +63,27 @@ function Commission() {
                         <tr>
                             <td>Headshot</td>
                             <td>300+</td>
-                            <td>500+</td>
+                            <td>600+</td>
                         </tr>
                         <tr>
                             <td>Bust Up</td>
                             <td>350+</td>
-                            <td>700+</td>
+                            <td>800+</td>
                         </tr>
                         <tr>
                             <td>Half Body</td>
                             <td>400+</td>
-                            <td>900+</td>
+                            <td>1000+</td>
                         </tr>
                         <tr>
                             <td>Knee Up</td>
                             <td>500+</td>
-                            <td>1000+</td>
+                            <td>1100+</td>
                         </tr>
                         <tr>
                             <td>Full Body</td>
-                            <td>550+</td>
-                            <td>1200+</td>
+                            <td>600+</td>
+                            <td>1250+</td>
                         </tr>
                     </table>
                 </div>
@@ -105,7 +105,7 @@ function Commission() {
                 <p>SKETCH</p>
             </div>    
             <div className="informdescription">
-                <p>เป็นเส้นรัฟนะคะ เราจะเก็บเส้นให้แล้วก็ถมดำให้ตามประมาณภาพตัวอย่างเลยค่า</p>   
+                <p>เป็นเส้นแบบรัฟ ๆ ค่า แต่เราจะเก็บเส้นให้แล้วก็ถมดำให้ตามประมาณภาพตัวอย่างเลยค่า</p>   
             </div>
 
             <div className="app-grid">
@@ -120,7 +120,7 @@ function Commission() {
             </div> 
 
             <div className="informdescription">
-                <p>เราจะลงสีแบบทับเส้นนะคะ อยากได้โทนสีแบบไหนหรืออยากได้สไตล์แบบไหนก็บอกเราได้เลยค่า</p>  
+                <p>ลงสีแบบทับเส้น เราจะเก็บเส้นและสาดสีให้ค่า อยากได้โทนสีแบบไหนหรืออยากได้สไตล์แบบไหนก็บอกเราได้เลยค่า</p>  
             </div>
 
             <br/>
@@ -159,7 +159,7 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-palette"></i> 
                         <p>4.ลงสี</p>
-                        <h4>เมื่อภาพร่างผ่านแล้ว <h4 id="underline">เราก็จะลงสีคร่าว ๆ แล้วส่งให้ตรวจดูอีกครั้งนะคะ</h4> จากนั้นถ้าลูกค้าโอเคแล้วเราก็จะเริ่มทับเส้นเก็บงานให้เรียบร้อยค่า</h4>
+                        <h4>เมื่อภาพร่างผ่านแล้ว <h4 id="underline">เราก็จะลงสีคร่าว ๆ แล้วส่งให้ดูค่า</h4> ถ้าลูกค้าโอเคแล้วเราก็จะเริ่มทับเส้นเก็บงานเลยค่า</h4>
                     </div>
 
                     <div className="process"> 
@@ -178,11 +178,11 @@ function Commission() {
                 </div>
                 <br/>
                 <div className="red">
-                    <p><i class="fas fa-star-of-life"></i> ราคานี้เราไม่ใช้อนุญาตให้นำงานไปใช้เชิงพาณิชย์นะคะ ตอนนี้ขอเปิดสำหรับ personal use อย่างเดียวนะคะ</p>
-                    <p><i class="fas fa-star-of-life"></i> สามารถแก้ได้รวมทั้งหมด 5 ครั้งนะคะ แต่ถ้าเราวาดสเกลผิดปกติหรือวาดไม่ตรงบรีฟเองเราไม่นับค่า </p>
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เราไม่ใช้อนุญาตให้นำงานไปใช้เชิงพาณิชย์นะคะ ตอนนี้ขอเปิดสำหรับ personal use อย่างเดียวก่อนค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ 3 ครั้ง Color แก้เพิ่มได้อีก 3 ครั้ง (ในส่วนของการลงสี) นอกจากนี้ขอเก็บเพิ่มครั้งละ 50 นะคะ แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
                     <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยค่า</p>
                     <br/>
-                    <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์ (*ไม่รับงานเร่งนะคะ*)</p>
+                    <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
                     <p><i class="fas fa-dot-circle"></i> ธนาคารกสิกรไทย / TrueWallet (+15)</p>
                 </div>
                 <br/>
@@ -203,7 +203,6 @@ function Commission() {
             <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/mikomaki35"><i class="fab fa-instagram"></i></a>
             </div>
 
         </div>

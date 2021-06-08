@@ -14,7 +14,7 @@
     
 }
 
-@media screen and (max-width: 750px) { 
+@media screen and (max-width: 800px) { 
     .app-grid {
         grid-template-columns: 1fr 1fr; 
         padding-inline-start: 5%;
@@ -176,10 +176,6 @@
     padding-inline-end: 20px;   
 }
 
-.process h4 a{
-    font-weight: 900;
-}
-
 .process h4#underline{
     display: inline;
     color: #262223;
@@ -189,6 +185,11 @@
     padding-inline-end: 0px;
 }
 
+@media screen and (max-width: 1500px) {  
+    .process-grid {
+        grid-template-columns: 1fr  1fr;
+    }
+}
 
 @media screen and (max-width: 1200px) {  
     .etc {
@@ -201,13 +202,12 @@
         margin-right: 15%;
     }
 }
-@media screen and (max-width: 750px) {   
+@media screen and (max-width: 800px) {   
     .etc {
         margin-left: 5%;
         margin-right: 5%;
     } 
     .process-grid {
-        grid-template-columns: 1fr;
         margin-left: 10%;
         margin-right: 10%;
         
@@ -223,6 +223,7 @@
 }
 
 .table_edit {
+    margin-top: 30px;
     float: right; 
     padding-inline-end: 10%; 
 }
@@ -247,11 +248,13 @@ table  tr.head{
     color: #DDC6B6;
     font-size: 30px;
 }
-
 table th, table td {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 100;
-    padding: 15px 70px; 
+    padding: 20px 90px; 
+}
+table th{
+    font-family: 'Prompt', sans-serif;
 }
     
 table tr:nth-child(even) {
@@ -277,27 +280,33 @@ table tr:nth-child(even) {
 
 }
 
+@media screen and (max-width: 1500px) {
+    table th, table td {
+        padding: 15px 70px; 
+    }
+  
+}
+
 
 @media screen and (max-width: 1250px) {
-    .table_edit {
-        float: none;
-        padding-inline-end: 0%;
-    }
-    table {
-        width:80%; 
-        margin-left:10%; 
-        margin-right:10%;
-    }
     .pic_scale {
         max-width: 40%;
         padding-inline-start: 0%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    .table_edit {
+        float: none;
+        padding-inline-end: 0%;
+        margin-top: 0;
+    }
+    table {
+        width:80%; 
+        margin-left:10%; 
+        margin-right:10%;
     } 
     .text_bottom_table {
-        padding-inline-start: 10%;
-        padding-inline-end: 10%;
         margin-left: 10%;
         margin-right: 10%; 
     }
@@ -305,16 +314,15 @@ table tr:nth-child(even) {
 }
 
 
-@media screen and (max-width: 750px) { 
+@media screen and (max-width: 800px) { 
     .pic_scale {
         max-width: 80%;
     } 
-    .text_bottom_table {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
     table  tr.head{
-        font-size: 20px;
+        font-size: 25px;
+    }
+    table th, table td {
+        padding: 20px 20px; 
     }
     table{
         font-size: 20px;
@@ -322,8 +330,9 @@ table tr:nth-child(even) {
         margin-left:5%; 
         margin-right:5%;
     }
-    table th, table td {
-        padding: 15px 20px; 
+    .text_bottom_table {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -334,7 +343,7 @@ table tr:nth-child(even) {
     max-width: 50%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .app-grid#bank_logo {
         max-width: 40%;
     }

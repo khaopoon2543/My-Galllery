@@ -19,4 +19,10 @@ export const MenuItems = [
         url: '/commission',
         cName: 'nav-links'
     }
+    ,
+    {
+        title: 'CHECK-STATUS',
+        url: '/status',
+        cName: 'nav-links'
+    }
 ]
