@@ -41,10 +41,6 @@ function Line() {
             </div>
             {picPost}
 
-            <br/>
-            <div className="credit">
-                <h5>@kaopuny</h5>
-            </div>
             <br/><br/><br/>
 
         </div>

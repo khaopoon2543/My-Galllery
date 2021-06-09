@@ -427,8 +427,7 @@ hr.dashed {
     padding: 0px;
     margin-left: -20px;
     margin-right: -20px;
-    color: #DDC6B6;
-    opacity: 50%;
+    color: #ddc6b679;
 }
 
 @media screen and (max-width: 1500px) {

@@ -51,17 +51,11 @@ button:hover {
 
 }
 
-
 @media screen and (max-width: 800px) {
     
   .app-grid {
       grid-template-columns: 1fr 1fr ;
   }
-}
-
-.credit {
-  text-align: center;
-
 }
 
 

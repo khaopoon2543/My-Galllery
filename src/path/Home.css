@@ -26,14 +26,10 @@
     padding-inline-end: 40px;
 }
 
-.contact i{
+.about-me i {
     font-size: 30px;
-    color: white;
-    background-color: #ffc1b6;
-    border-radius: 50%;
-    padding: 20px;   
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding: 10px;
+    color:#26222365;
 }
+
   
