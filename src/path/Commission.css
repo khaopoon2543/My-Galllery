@@ -1,4 +1,4 @@
-.app-grid{
+.app-grid .comission{
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,11 +14,10 @@
     
 }
 
-@media screen and (max-width: 800px) { 
-    .app-grid {
+@media screen and (max-width: 960px) { 
+    .app-grid .comission{
         grid-template-columns: 1fr 1fr; 
-        padding-inline-start: 5%;
-        padding-inline-end: 5%; 
+      
     }
 }
 
@@ -105,11 +104,6 @@
     color: white;
 }
 
-.etc_topic#process h1{
-    color: #262223;
-    font-weight: 900;
-}
-
 .etc p{
     font-family: 'Prompt', sans-serif;
     text-align: left;
@@ -125,8 +119,48 @@
 
 /*------------------------------------------------------------------------------------------------------*/
 
+.etc#candoit {
+    display:block;
+    background: #262223;
+    overflow:auto;
+}
+.candoit{
+    width: 50%;
+    text-align: center;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+    padding-bottom: 2%;
+}
+
+.etc#candoit .red {
+    float: right;
+}
+
+.etc#candoit .white {
+    float: left;
+}
+
+.border-right {
+    border-right: 3px outset #f3f3f3;
+}
+
+@media screen and (max-width: 960px) {   
+    .candoit{
+        padding-inline-start: 5%;
+        padding-inline-end: 5%;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
 .etc#process {
-    background-color: #DDC6B6;
+    background-color: #f3f3f3;
+
+}
+
+.etc_topic#process h1{
+    font-weight: 500;
+    color: #262223;
 }
 
 .process-grid {
@@ -179,7 +213,7 @@
 .process h4#underline{
     display: inline;
     color: #262223;
-    background-color: #FDEBD3;
+    background-color: #DDC6B6;
     padding: auto;
     padding-inline-start: 0px;
     padding-inline-end: 0px;
@@ -202,7 +236,7 @@
         margin-right: 15%;
     }
 }
-@media screen and (max-width: 800px) {   
+@media screen and (max-width: 960) {   
     .etc {
         margin-left: 5%;
         margin-right: 5%;
@@ -258,7 +292,7 @@ table th{
 }
     
 table tr:nth-child(even) {
-    color: black;
+    color: #262223;
     background-color: #f2f2f2;
 }
 
@@ -272,25 +306,23 @@ table tr:nth-child(even) {
 }
 
 .text_bottom_table {
-    background-color: #c7e4de;
     border-radius: 1rem;
     margin: 1rem auto;
     padding: 1.5rem;
     margin-top: -20px;
-
+    background-color: #c7e4de;
 }
 
 @media screen and (max-width: 1500px) {
     table th, table td {
         padding: 15px 70px; 
     }
-  
 }
 
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1200px) {
     .pic_scale {
-        max-width: 40%;
+        max-width: 30%;
         padding-inline-start: 0%;
         display: block;
         margin-left: auto;
@@ -309,14 +341,13 @@ table tr:nth-child(even) {
     .text_bottom_table {
         margin-left: 10%;
         margin-right: 10%; 
-    }
-  
+    } 
 }
 
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 960px) { 
     .pic_scale {
-        max-width: 80%;
+        max-width: 50%;
     } 
     table  tr.head{
         font-size: 25px;
@@ -370,28 +401,53 @@ hr.dashed {
 
 .queue a{
     font-family: 'Prompt', sans-serif;
-    background-color: #262223;
-    color: #DDC6B6;
+    font-size: 25px;
+    background-color: #DDC6B6;
+    color: #262223;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 2rem;
     width: 20%;
     padding: 15px 60px;
 }
 
 .queue a:hover {
-    background-color: #DDC6B6;
-    color: #262223;
+    background-color: #262223;
+    color: #DDC6B6;
     transition: all 0.3s ease-out ;
 }
 
-@media screen and (max-width: 1250px) {
+.queue i{
+    font-size: 80px;
+    padding: 20px;
+    color: #DDC6B6;
+}
+
+.queue i.light{
+    padding: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: #DDC6B6;
+    opacity: 50%;
+}
+
+@media screen and (max-width: 1500px) {
+    .queue a{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     .queue a{
         width: 30%;
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
     .queue a{
+        font-size: 20px;
         width: 50%;
+    }
+    .queue i{
+        font-size: 50px;
     }
 }

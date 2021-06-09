@@ -58,22 +58,22 @@ function Commission() {
                         <tr>
                             <td>Headshot</td>
                             <td>300+</td>
-                            <td>600+</td>
+                            <td>550+</td>
                         </tr>
                         <tr>
                             <td>Bust Up</td>
                             <td>350+</td>
-                            <td>800+</td>
+                            <td>750+</td>
                         </tr>
                         <tr>
                             <td>Half Body</td>
                             <td>400+</td>
-                            <td>1000+</td>
+                            <td>950+</td>
                         </tr>
                         <tr>
                             <td>Knee Up</td>
                             <td>500+</td>
-                            <td>1100+</td>
+                            <td>1050+</td>
                         </tr>
                         <tr>
                             <td>Full Body</td>
@@ -87,13 +87,12 @@ function Commission() {
                     <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้นๆค่า</p>
                     <p><i class="fas fa-star-of-life"></i> ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
                     <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจเปลี่ยนไปตามเวลาดังนั้นขอให้ยึดลายเส้นล่าสุดที่เราโพสเป็นหลักนะคะ</p>
-                </div><br/><br/>
+                </div><br/>
             </div>
             <div className="pic_scale">
                 {picElementsScale}
-            </div>
+            </div><br/>
 
-            <br/><br/>
             <br/><hr class="dashed"></hr><br/>
 
             <div className="linecolor">
@@ -103,7 +102,7 @@ function Commission() {
                 <p>เป็นเส้นแบบรัฟ ๆ ค่า แต่เราจะเก็บเส้นให้แล้วก็ถมดำให้ตามประมาณภาพตัวอย่างเลยค่า</p>   
             </div>
 
-            <div className="app-grid">
+            <div className="app-grid comission">
                 {picElementsLINE}
             </div>
 
@@ -120,11 +119,32 @@ function Commission() {
 
             <br/>
            
-            <div className="app-grid">
+            <div className="app-grid comission">
                 {picElementsCOLOR}
             </div><br/>
 
             {picPost}
+
+            <div className="etc" id="candoit">
+                <div className="etc_topic">
+                    <h1>CAN & CAN'T</h1>
+                </div>
+                <br/>
+                <div className="white candoit border-right">
+                    <p><i class="far fa-circle"></i> Original Characters / Fanarts</p>
+                    <p><i class="far fa-circle"></i> NL / BL / GL</p>
+                    <br/>
+                </div> 
+                <div className="red candoit">
+                    <p><i class="fas fa-times"></i> R-18 / Gore</p>
+                    <p><i class="fas fa-times"></i> Robot / Furry / Muscle</p>
+                    <p><i class="fas fa-times"></i> Realistic </p>
+                    <p><i class="fas fa-times"></i> Elderly People </p>
+                    <p><i class="fas fa-times"></i> Perspective BG</p>
+                </div>          
+            </div>
+
+            <br/>
 
             <div className="etc" id="process">
                 <div className="etc_topic" id="process">
@@ -194,7 +214,11 @@ function Commission() {
             <br/><hr class="dashed"></hr><br/><br/><br/>
 
             <div className="queue">
+                <i class="fas fa-chevron-right light"></i>
+                <i class="fas fa-chevron-right"></i>
                 <a href="https://docs.google.com/spreadsheets/d/1xZ7PbGFoHv0L9RyDI7TWlDJMl6l6vjACCkNOcOppdTI/edit#gid=0">Queue & Status</a>
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-left light"></i>
             </div>
             <br/>
             <div className="contact">
