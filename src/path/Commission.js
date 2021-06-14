@@ -83,9 +83,9 @@ function Commission() {
                     </table>
                 </div>
                 <div className="text_bottom_table">
-                    <p><i class="fas fa-star-of-life"></i> ราคานี้ไม่ใช่สำหรับเชิงพาณิชย์นะคะ เป็นราคาสำหรับ personal use อย่างเดียวค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้นๆค่า</p>
+                    <p id="bold"><i class="fas fa-star-of-life"></i> ราคานี้ไม่ใช่สำหรับเชิงพาณิชย์นะคะ เป็นราคาสำหรับ personal use อย่างเดียวค่า</p>
                     <p><i class="fas fa-star-of-life"></i> ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้น ๆ ค่า</p>
                     <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจเปลี่ยนไปตามเวลาดังนั้นขอให้ยึดลายเส้นล่าสุดที่เราโพสเป็นหลักนะคะ</p>
                 </div><br/>
             </div>
@@ -99,7 +99,7 @@ function Commission() {
                 <p>SKETCH</p>
             </div>    
             <div className="informdescription">
-                <p>เป็นเส้นแบบรัฟ ๆ ค่า แต่เราจะเก็บเส้นให้แล้วก็ถมดำให้ตามประมาณภาพตัวอย่างเลยค่า</p>   
+                <p>เป็นเส้นแบบรัฟ ๆ นะคะ แต่เราจะเก็บเส้นให้แล้วก็ถมดำเรียบ ๆ ให้ค่า แต่ถ้าต้องการให้ลงแสงเงาเพิ่มเติมแบบในรูป 3 & 4 เราขอบวกเพิ่ม 50 นะคะ</p>   
             </div>
 
             <div className="app-grid comission">
@@ -162,7 +162,7 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-comment-dollar"></i> 
                         <p>2.โอนเงิน</p>
-                        <h4>เมื่อตกลงราคากันเรียบร้อยแล้วก็สามารถชำระเงินได้เลยค่ะ <h4 id="underline">ถ้าราคารวมทั้งหมดมากกว่า 1000 บาทสามารถจ่าย 50% ก่อนได้นะคะ</h4> เราจะเริ่มงานหลังชำระเงินเรียบร้อยแล้วนะคะ</h4>
+                        <h4>เมื่อตกลงราคากันเรียบร้อยแล้วก็สามารถชำระเงินได้เลยค่ะ <h4 id="underline">ถ้าราคารวมทั้งหมดมากกว่า 800 บาทจ่าย 50% ก่อนได้นะคะ</h4></h4>
                     </div>
 
                     <div className="process"> 
@@ -180,7 +180,7 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-paper-plane"></i> 
                         <p>5.ส่งงาน</p>
-                        <h4>เมื่อเราเก็บงานเสร็จแล้ว <h4 id="underline">เราจะส่งภาพที่เสร็จแล้วให้ตรวจดูอีกครั้งนะคะ</h4> จากนั้นถ้าลูกค้าพอใจกับงานเรียบร้อยแล้ว เราก็จะส่งงานให้ผ่านทาง E-mail หรือ google drive ให้เลยค่า</h4>
+                        <h4>เมื่อเราเก็บงานเสร็จแล้ว <h4 id="underline">เราจะส่งภาพที่เสร็จแล้วให้ตรวจดูอีกครั้งนะคะ</h4> จากนั้นถ้าลูกค้าพอใจกับงานเรียบร้อยแล้ว และสำหรับผู้ที่จ่ายมัดจำก่อนเมื่อจ่ายอีกครึ่งครบแล้ว เราก็จะส่งงานผ่านทาง E-mail หรือ google drive ให้เลยค่า</h4>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@ function Commission() {
                 <br/>
                 <div className="red">
                     <p><i class="fas fa-star-of-life"></i> ราคานี้เราไม่ใช้อนุญาตให้นำงานไปใช้เชิงพาณิชย์นะคะ ตอนนี้ขอเปิดสำหรับ personal use อย่างเดียวก่อนค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ 3 ครั้ง Color แก้เพิ่มได้อีก 3 ครั้ง (ในส่วนของการลงสี) นอกจากนี้ขอเก็บเพิ่มครั้งละ 50 นะคะ แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ 3 ครั้ง Color แก้เพิ่มได้อีก 2 ครั้ง (ในส่วนของการลงสี) นอกจากนี้ขอเก็บเพิ่มครั้งละ 50 นะคะ แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
                     <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยค่า</p>
                     <br/>
                     <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
@@ -207,7 +207,7 @@ function Commission() {
                 <br/>
                 <p><i class="fas fa-dot-circle"></i> สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณไหนได้เลยค่า</p>
                 <p><i class="fas fa-dot-circle"></i> ลงสีพื้นหลังแบบตัวอย่างหรือแบบง่าย ๆ ให้ฟรีค่า</p>
-                <p><i class="fas fa-dot-circle"></i> มีอะไรอยากสอบถามเพิ่มเติมติดต่อเรามาได้เลยนะคะ(^○^)</p>
+                <p><i class="fas fa-dot-circle"></i> มีอะไรอยากสอบถามเพิ่มเติมติดต่อเรามาทาง IB หรือ DM ได้เลยนะคะ (^○^)</p>
                 <br/>
             </div>
 
@@ -224,6 +224,7 @@ function Commission() {
             <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100069345495474"><i class="fab fa-facebook-messenger"></i></a>
             </div>
 
         </div>

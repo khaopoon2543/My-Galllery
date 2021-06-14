@@ -305,6 +305,10 @@ table tr:nth-child(even) {
     color: #31675C;
 }
 
+p#bold {
+    font-weight: 1000;
+}
+
 .text_bottom_table {
     border-radius: 1rem;
     margin: 1rem auto;
