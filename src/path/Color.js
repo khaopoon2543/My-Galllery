@@ -27,7 +27,7 @@ function Color() {
 
     const [postToShow, setpostToShow] = useState(null);
 
-    const postsPerPage = 12
+    const postsPerPage = 20
     let arrayForHoldingPosts = []
     const ref = useRef(postsPerPage)
     const loopWithSlice = (start, end) => {
