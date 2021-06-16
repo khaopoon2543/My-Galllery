@@ -4,8 +4,15 @@ import PicItem from '../component/PicItem';
 import PicPost from '../component/PicPost';
 import picscolor from '../data/picscolor';
 import Navbar from '../component/Navbar/Navbar';
+import ReactGA from 'react-ga';
 
 function Color() {
+
+    useEffect ( () => {
+        ReactGA.initialize('UA-199620324-1');
+        ReactGA.pageview('/color');
+    }, [])
+
     const [selectedPic, setselectedPic] = useState(null);
 
     function onPicOpenClick(thePic) {

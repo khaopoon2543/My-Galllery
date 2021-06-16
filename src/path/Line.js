@@ -4,8 +4,16 @@ import PicItem from '../component/PicItem';
 import PicPost from '../component/PicPost';
 import picsline from '../data/picsline';
 import Navbar from '../component/Navbar/Navbar';
+import React , {useEffect} from 'react';
+import ReactGA from 'react-ga';
 
 function Line() {
+
+    useEffect ( () => {
+        ReactGA.initialize('UA-199620324-1');
+        ReactGA.pageview('/line');
+    }, [])
+
     const [selectedPic, setselectedPic] = useState(null);
 
     function onPicOpenClick(thePic) {

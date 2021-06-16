@@ -5,10 +5,18 @@ import PicPost from '../component/PicPost';
 import picscolor from '../data/picsComCOLOR';
 import picsScale from '../data/picsScale';
 import picslines from '../data/picsComLINE';
+import React , {useEffect} from 'react';
+import ReactGA from 'react-ga';
 
 import './Commission.css';
 
 function Commission() {
+
+    useEffect ( () => {
+        ReactGA.initialize('UA-199620324-1');
+        ReactGA.pageview('/commission');
+    }, [])
+
     const [selectedPic, setselectedPic] = useState(null);
 
     function onPicOpenClick(thePic) {
@@ -99,7 +107,7 @@ function Commission() {
                 <p>SKETCH</p>
             </div>    
             <div className="informdescription">
-                <p>เป็นเส้นแบบรัฟ ๆ นะคะ แต่จะเก็บเส้นให้แล้วก็ถมดำเรียบ ๆ ให้ค่า แต่ถ้าต้องการลงแสงเงาเพิ่มเติมแบบในรูป 3 & 4 บวกเพิ่ม 50 นะคะ</p>   
+                <p>เป็นเส้นแบบรัฟ ๆ นะคะ แต่จะเก็บเส้นให้แล้วก็ถมดำเรียบ ๆ ให้ค่า แต่ถ้าต้องการลงแสงเงาเพิ่มเติมแบบในรูป 3 & 4 จะบวกเพิ่ม 50 บาทนะคะ</p>   
             </div>
 
             <div className="app-grid comission">
@@ -143,7 +151,8 @@ function Commission() {
                     <p><i class="fas fa-times"></i> Realistic </p>
                     <p><i class="fas fa-times"></i> Elderly People </p>
                     <p><i class="fas fa-times"></i> Perspective BG</p>
-                </div> 
+                </div>
+                <br/>
                          
             </div>
 
@@ -227,7 +236,7 @@ function Commission() {
             <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100069345495474"><i class="fab fa-facebook-messenger"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100005184785636"><i class="fab fa-facebook-messenger"></i></a>
             </div>
 
         </div>
