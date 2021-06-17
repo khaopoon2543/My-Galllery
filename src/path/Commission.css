@@ -1,4 +1,4 @@
-.app-grid .comission{
+.app-grid#cms{
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,10 +14,13 @@
     
 }
 
-@media screen and (max-width: 960px) { 
-    .app-grid .comission{
-        grid-template-columns: 1fr 1fr; 
-      
+
+@media screen and (max-width: 750px) { 
+    .app-grid#cms{
+        grid-template-columns: 1fr 1fr;    
+        padding-inline-start: 5%;
+        padding-inline-end: 5%;
+        max-width: 70%;
     }
 }
 
@@ -79,9 +82,8 @@
 .informdescription p{
     font-family: 'Prompt', sans-serif;
     text-align: center;
-    font-size: 16px;
-    padding-inline-start: 80px;
-    padding-inline-end: 80px;
+    padding-inline-start: 20%;
+    padding-inline-end: 20%;
 }
 
 
@@ -284,12 +286,12 @@ table  tr{
 table  tr.head{
     background-color: #262223;
     color: #DDC6B6;
-    font-size: 30px;
+    font-size: 25px;
 }
 table th, table td {
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 100;
-    padding: 20px 90px; 
+    padding: 20px 70px; 
 }
 table th{
     font-family: 'Prompt', sans-serif;
@@ -309,10 +311,6 @@ table tr:nth-child(even) {
     color: #31675C;
 }
 
-p#bold {
-    font-weight: 1000;
-}
-
 .text_bottom_table {
     border-radius: 1rem;
     margin: 1rem auto;
@@ -323,39 +321,56 @@ p#bold {
 
 @media screen and (max-width: 1500px) {
     table th, table td {
-        padding: 15px 70px; 
+        padding: 20px 80px; 
     }
+    .pic_scale {
+        max-width: 35%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        padding-inline-start: 10%;
+    }
+    table  tr.head{
+        font-size: 25px;
+    }
+    .table_edit {
+        margin-top: 3%;
+        padding-inline-end: 10%; 
+    } 
 }
 
 
 @media screen and (max-width: 1200px) {
+    table th, table td {
+        padding: 20px 70px; 
+    }
+}
+
+@media screen and (max-width: 960px) {
     .pic_scale {
-        max-width: 30%;
-        padding-inline-start: 0%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 40%;
+        margin-bottom: 5%;
+        padding-inline-start: 10%;
+    }
+    table th, table td {
+        padding: 15px 40px; 
+    }
+}
+
+@media screen and (max-width: 750px) { 
+    .text_bottom_table p{
+        font-size: 16px;
     }
     .table_edit {
         float: none;
         padding-inline-end: 0%;
         margin-top: 0;
     }
-    table {
-        width:80%; 
-        margin-left:10%; 
-        margin-right:10%;
-    } 
-    .text_bottom_table {
-        margin-left: 10%;
-        margin-right: 10%; 
-    } 
-}
-
-
-@media screen and (max-width: 960px) { 
     .pic_scale {
         max-width: 50%;
+        padding-inline-start: 0%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     } 
     table  tr.head{
         font-size: 25px;
@@ -374,6 +389,7 @@ p#bold {
         margin-right: 5%;
     }
 }
+
 
 /*------------------------------------------------------------------------------------------------------*/
 
@@ -409,7 +425,7 @@ hr.dashed {
 
 .queue a{
     font-family: 'Prompt', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #DDC6B6;
     color: #262223;
     text-decoration: none;

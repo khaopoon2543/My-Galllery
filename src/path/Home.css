@@ -22,8 +22,8 @@
 .about-me p{
     font-size: 20px;
     margin-top: 20px;
-    padding-inline-start: 40px;
-    padding-inline-end: 40px;
+    padding-inline-start: 20%;
+    padding-inline-end: 20%;
 }
 
 .about-me i {

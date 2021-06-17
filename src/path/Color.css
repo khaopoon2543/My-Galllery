@@ -51,7 +51,14 @@ button:hover {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+    
+  .app-grid {
+      grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+@media screen and (max-width: 750px) {
     
   .app-grid {
       grid-template-columns: 1fr 1fr ;

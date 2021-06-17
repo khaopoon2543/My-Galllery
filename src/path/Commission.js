@@ -5,6 +5,7 @@ import PicPost from '../component/PicPost';
 import picscolor from '../data/picsComCOLOR';
 import picsScale from '../data/picsScale';
 import picslines from '../data/picsComLINE';
+import picspainting from '../data/picsComPAINTING';
 import React , {useEffect} from 'react';
 import ReactGA from 'react-ga';
 
@@ -36,6 +37,9 @@ function Commission() {
     const picElementsScale = picsScale.map((pic, index) => {
         return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
+    const picElementsPAINTING = picspainting.map((pic, index) => {
+        return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
+    });
 
     let picPost = null;
     if (!!selectedPic) {
@@ -62,44 +66,50 @@ function Commission() {
                             <th>SCALE</th>
                             <th>SKETCH</th>
                             <th>COLOR</th>
+                            <th>PAINTING</th>
                         </tr>
                         <tr>
                             <td>Headshot</td>
                             <td>300+</td>
-                            <td>550+</td>
+                            <td>400+</td>
+                            <td>600+</td>
                         </tr>
                         <tr>
                             <td>Bust Up</td>
                             <td>350+</td>
-                            <td>750+</td>
+                            <td>500+</td>
+                            <td>800+</td>
                         </tr>
                         <tr>
                             <td>Half Body</td>
                             <td>400+</td>
-                            <td>950+</td>
+                            <td>600+</td>
+                            <td>1000+</td>
                         </tr>
                         <tr>
                             <td>Knee Up</td>
                             <td>500+</td>
-                            <td>1050+</td>
+                            <td>700+</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>Full Body</td>
                             <td>600+</td>
-                            <td>1250+</td>
+                            <td>800+</td>
+                            <td>-</td>
                         </tr>
                     </table>
                 </div>
                 <div className="text_bottom_table">
-                    <p id="bold"><i class="fas fa-star-of-life"></i> ราคานี้ไม่ใช่สำหรับเชิงพาณิชย์นะคะ เป็นราคาสำหรับ personal use อย่างเดียวค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> ถ้ารายละเอียดเยอะจะเพิ่มราคาตามความเหมาะสมนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาสำหรับ Personal use (Commercial use x2) </p>
                     <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้น ๆ ค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
                     <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจเปลี่ยนไปตามเวลาดังนั้นขอให้ยึดลายเส้นล่าสุดที่เราโพสเป็นหลักนะคะ</p>
                 </div><br/>
             </div>
             <div className="pic_scale">
                 {picElementsScale}
-            </div><br/>
+            </div>
 
             <br/><hr class="dashed"></hr><br/>
 
@@ -107,28 +117,35 @@ function Commission() {
                 <p>SKETCH</p>
             </div>    
             <div className="informdescription">
-                <p>เป็นเส้นแบบรัฟ ๆ นะคะ แต่จะเก็บเส้นให้แล้วก็ถมดำเรียบ ๆ ให้ค่า แต่ถ้าต้องการลงแสงเงาเพิ่มเติมแบบในรูป 3 & 4 จะบวกเพิ่ม 50 บาทนะคะ</p>   
+                <p>เป็นเส้นแบบรัฟ ๆ นะคะ แต่จะเก็บเส้นให้แล้วก็ถมดำเรียบ ๆ ให้ค่า ถ้าต้องการลงแสงเงาเพิ่มเติมแบบในรูป 3 & 4 จะบวกเพิ่ม 50-100 บาทตามรายละเอียดนะคะ</p>   
             </div>
-
-            <div className="app-grid comission">
+            <div className="app-grid" id="cms">
                 {picElementsLINE}
             </div>
 
             <br/><hr class="dashed"></hr><br/>
 
-           
             <div className="linecolor">
                 <p>COLOR</p>
             </div> 
-
             <div className="informdescription">
-                <p>ลงสีแบบทับเส้น จะเก็บเส้นและสาดสีให้ค่า อยากได้โทนสีแบบไหนหรืออยากได้สไตล์แบบไหนก็บอกได้เลยค่า</p>  
+                <p>เป็นเส้นแบบ Sketch เก็บเส้นให้เหมือนกัน เพิ่มเติมคือลงสีลงเงาและสาดแสงแบบง่าย ๆ แต่ดูดีให้ค่า</p>  
+            </div><br/>
+            <div className="app-grid" id="cms">
+                {picElementsCOLOR}
             </div>
 
-            <br/>
-           
-            <div className="app-grid comission">
-                {picElementsCOLOR}
+            <br/><hr class="dashed"></hr><br/>
+
+
+            <div className="linecolor">
+                <p>PAINTING</p>
+            </div> 
+            <div className="informdescription">
+                <p>ลงสีแบบทับเส้น จะเก็บเส้นและสาดสีแบบจัดเต็มให้ค่า อยากได้โทนสีแบบไหนหรืออยากได้สไตล์แบบไหนก็บอกได้เลยค่า</p>  
+            </div><br/>
+            <div className="app-grid" id="cms">
+                {picElementsPAINTING}
             </div><br/>
 
             {picPost}
@@ -142,7 +159,7 @@ function Commission() {
                     <p><i class="fas fa-check"></i> Original Characters</p>
                     <p><i class="fas fa-check"></i> Fanarts</p>
                     <p><i class="fas fa-check"></i> NL / BL / GL</p>
-                    <p><i class="fas fa-star-of-life"></i> สามารถสอบถามเพิ่มเติมได้</p>
+                    <p><i class="fas fa-star-of-life"></i> ทักมาสอบถามเพิ่มเติมได้นะคะ</p>
                     <br/>
                 </div> 
                 <div className="red candoit">
@@ -180,13 +197,13 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-pencil-alt"></i> 
                         <p>3.ร่างภาพ</p>
-                        <h4>เมื่อชำระเงินและถึงคิวลูกค้าแล้ว <h4 id="underline">เราจะร่างภาพตามบรีฟแล้วจะส่งให้ตรวจดูค่า</h4> (สำหรับงาน Sketch เมื่อลูกค้าพอใจแล้วเราก็จะส่งงานให้เลยค่า)</h4>
+                        <h4>เมื่อชำระเงินและถึงคิวลูกค้าแล้ว <h4 id="underline">เราจะร่างภาพตามบรีฟแล้วจะส่งให้ตรวจดูค่า</h4> สำหรับ Sketch เมื่อลูกค้าพอใจแล้วก็จะส่งงานให้เลยค่า</h4>
                     </div>
 
                     <div className="process"> 
                         <i class="fas fa-palette"></i> 
                         <p>4.ลงสี</p>
-                        <h4>เมื่อภาพร่างผ่านแล้ว <h4 id="underline">เราจะลงสีคร่าว ๆ แล้วส่งให้ตรวจดูค่า</h4> ถ้าลูกค้าโอเคแล้วเราก็จะเริ่มทับเส้นเก็บงานเลย</h4>
+                        <h4>เมื่อภาพร่างผ่านแล้ว <h4 id="underline">เราจะลงสีคร่าว ๆ แล้วส่งให้ตรวจดูค่า</h4> เมื่อลูกค้าพอใจแล้ว สำหรับ Color เราก็จะส่งงานให้เลยค่า ส่วน Painting ก็จะเริ่มทับเส้นเก็บงานเลย</h4>
                     </div>
 
                     <div className="process"> 
@@ -205,8 +222,8 @@ function Commission() {
                 </div>
                 <br/>
                 <div className="red">
-                    <p><i class="fas fa-star-of-life"></i> ราคานี้ไม่ใช้อนุญาตให้นำงานไปใช้เชิงพาณิชย์นะคะ ตอนนี้ขอเปิดสำหรับ personal use อย่างเดียวก่อนค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ 3 ครั้ง Color แก้เพิ่มได้อีก 2 ครั้ง (ในส่วนของการลงสี) นอกจากนี้ขอเก็บเพิ่มครั้งละ 50 นะคะ แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาสำหรับ Personal use (Commercial use x2)</p>
+                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ทั้งหมด 3 ครั้ง / Color & Painting แก้ได้ทั้งหมด 5 ครั้ง นอกจากนี้จะขอเก็บเพิ่มครั้งละ 50 บาทนะคะ แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
                     <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยค่า</p>
                     <br/>
                     <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
@@ -215,15 +232,15 @@ function Commission() {
                 <br/>
                 <p><i class="fas fa-dot-circle"></i> ไฟล์ภาพจะปรับตามความเหมาะสมของภาพนะคะ โดยปกติจะใช้ขนาด 1500*1500px และ 1500*2000px / Resolution 300dpi</p>
                 <p><i class="fas fa-dot-circle"></i> แต่ถ้าต้องการขนาดอื่นสามารถบอกขนาดไฟล์ภาพที่ต้องการกับเราก่อนเริ่มงานได้เลยค่า</p>
-                <p><i class="fas fa-dot-circle"></i> ส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
+                <p><i class="fas fa-dot-circle"></i> เราจะส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
                 <br/>
                 <p><i class="fas fa-dot-circle"></i> สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณไหนได้เลยค่า</p>
                 <p><i class="fas fa-dot-circle"></i> ลงสีพื้นหลังแบบตัวอย่างหรือแบบง่าย ๆ ให้ฟรีค่า</p>
-                <p><i class="fas fa-dot-circle"></i> มีอะไรอยากสอบถามเพิ่มเติมติดต่อมาทาง IB หรือ DM ได้เลยนะคะ (^○^)</p>
+                <p><i class="fas fa-dot-circle"></i> มีอะไรอยากสอบถามเพิ่มเติมติดต่อเรามาทาง IB หรือ DM ได้เลยนะคะ (^○^)</p>
                 <br/>
             </div>
 
-            <br/><hr class="dashed"></hr><br/>
+            <br/>
 
             <div className="queue">
                 <i class="fas fa-chevron-right light"></i>

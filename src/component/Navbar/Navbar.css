@@ -114,7 +114,12 @@
   }
 
   .menu-icon .fa-times {
-    color: #fff;
+    color: #262223;
+    font-size: 2rem;
+  }
+
+  .menu-icon .fa-bars {
+    color: #262223;
     font-size: 2rem;
   }
 
