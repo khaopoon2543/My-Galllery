@@ -258,7 +258,7 @@
 
 .pic_scale {
     text-align: left;  
-    max-width: 40%;
+    max-width: 35%;
     padding-inline-start: 10%;
 }
 
@@ -269,7 +269,7 @@
 }
   
 table{
-    font-size: 20px;
+    font-size: 16px;
     transition: 0.5s;
     margin-bottom: 3rem;
     border-collapse: collapse;
@@ -305,7 +305,6 @@ table tr:nth-child(even) {
 .text_bottom_table p{
     font-family: 'Prompt', sans-serif;
     text-align: left;
-    font-size: 16px;
     padding-inline-start: 5%;
     padding-inline-end: 5%;
     color: #31675C;
@@ -319,59 +318,59 @@ table tr:nth-child(even) {
     background-color: #c7e4de;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1900px) {
+    .pic_scale {
+        max-width: 40%;
+        padding-inline-start: 10%;
+    }
+    .table_edit {
+        padding-inline-end: 10%; 
+    }
+    table  tr.head{
+        font-size: 20px;
+    } 
+    table th, table td {
+        padding: 20px 60px; 
+    }
+}
+
+@media screen and (max-width: 1600px) {
     table th, table td {
         padding: 20px 80px; 
     }
     .pic_scale {
         max-width: 35%;
-        margin-top: 2%;
-        margin-bottom: 5%;
-        padding-inline-start: 10%;
     }
-    table  tr.head{
-        font-size: 25px;
-    }
-    .table_edit {
-        margin-top: 3%;
-        padding-inline-end: 10%; 
-    } 
 }
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     table th, table td {
-        padding: 20px 70px; 
+        padding: 20px 60px; 
     }
-}
-
-@media screen and (max-width: 960px) {
     .pic_scale {
-        max-width: 40%;
-        margin-bottom: 5%;
-        padding-inline-start: 10%;
-    }
-    table th, table td {
-        padding: 15px 40px; 
+        margin-bottom: 8%;
     }
 }
 
-@media screen and (max-width: 750px) { 
-    .text_bottom_table p{
-        font-size: 16px;
-    }
+@media screen and (max-width: 1200px) { 
+    .pic_scale {
+        max-width: 30%;
+        padding-inline-start: 0%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    } 
     .table_edit {
         float: none;
         padding-inline-end: 0%;
         margin-top: 0;
     }
-    .pic_scale {
-        max-width: 50%;
-        padding-inline-start: 0%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    } 
+    .text_bottom_table {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     table  tr.head{
         font-size: 25px;
     }
@@ -384,9 +383,11 @@ table tr:nth-child(even) {
         margin-left:5%; 
         margin-right:5%;
     }
-    .text_bottom_table {
-        margin-left: 5%;
-        margin-right: 5%;
+}
+
+@media screen and (max-width: 750px) {
+    .pic_scale {
+        max-width: 50%;
     }
 }
 
