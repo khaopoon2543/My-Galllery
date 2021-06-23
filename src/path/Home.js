@@ -23,7 +23,7 @@ function Home() {
                 <h4>Kaopuny</h4>
                 <br/>
                 <p><i class="fas fa-quote-left"></i> สวัสดีคับ เราข้าวปุ้นเอ้ง <i class="fas fa-quote-right"></i></p>
-                <p>นี่เว็บเก็บคลังงานของเราเอง วาดเล่นบ้างจริงจังบ้างไปเรื่อยคับ ลงงานอยู่ในทวิตบ่อยสุด มาคุยกันได้นะค้าบ <i class="far fa-laugh-wink"></i></p>
+                <p>นี่เว็บเก็บคลังงานของเราเอง วาดเล่นบ้างจริงจังบ้างไปเรื่อยคับ ลงงานอยู่ในทวิตบ่อยสุด ยังไงก็ขอฝากงานเราไว้ในใจทุกคนด้วยนะค้าบ <i class="far fa-laugh-wink"></i></p>
                 <br/><br/><br/>
                 <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
