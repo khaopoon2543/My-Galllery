@@ -22,12 +22,16 @@ tr p {
     border-radius: 10rem;
 }
 
+#left {
+    text-align: left;
+}
+
 tr p#type {
     background-color: #DDC6B6;
     color: #262223;
 }
 tr p#scale {
-    background-color: #DDC6B6;
+    background-color: #ddc6b663;
     color: #262223;
 }
 

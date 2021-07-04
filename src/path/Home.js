@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 function Home() {
 
     useEffect ( () => {
-        ReactGA.initialize('UA-199620324-1');
+        ReactGA.initialize('UA-199620324-2');
         ReactGA.pageview('/home');
     }, [])
 

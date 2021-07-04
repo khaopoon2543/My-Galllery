@@ -9,9 +9,11 @@ import ReactGA from 'react-ga';
 function Color() {
 
     useEffect ( () => {
-        ReactGA.initialize('UA-199620324-1');
+        ReactGA.initialize('UA-199620324-2');
         ReactGA.pageview('/color');
     }, [])
+
+    
 
     const [selectedPic, setselectedPic] = useState(null);
 
@@ -32,6 +34,8 @@ function Color() {
         picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick}/>
     }
 
+
+
     const [postToShow, setpostToShow] = useState(null);
 
     const postsPerPage = 20
@@ -50,6 +54,7 @@ function Color() {
         loopWithSlice(ref, ref.current + postsPerPage)
         ref.current += postsPerPage
     }
+
 
     return (
         <div className="App">

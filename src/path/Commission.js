@@ -14,7 +14,7 @@ import './Commission.css';
 function Commission() {
 
     useEffect ( () => {
-        ReactGA.initialize('UA-199620324-1');
+        ReactGA.initialize('UA-199620324-2');
         ReactGA.pageview('/commission');
     }, [])
 
@@ -69,47 +69,41 @@ function Commission() {
                             <th>PAINTING</th>
                         </tr>
                         <tr>
-                            <td>Headshot</td>
-                            <td>300+</td>
-                            <td>400+</td>
-                            <td>550+</td>
-                        </tr>
-                        <tr>
-                            <td>Bust Up</td>
+                            <td>Bust-Up</td>
                             <td>350+</td>
                             <td>500+</td>
-                            <td>750+</td>
+                            <td>800+</td>
                         </tr>
                         <tr>
                             <td>Half Body</td>
                             <td>400+</td>
-                            <td>600+</td>
-                            <td>950+</td>
+                            <td>700+</td>
+                            <td>1000+</td>
                         </tr>
                         <tr>
-                            <td>Knee Up</td>
+                            <td>Knee-Up</td>
                             <td>500+</td>
-                            <td>700+</td>
+                            <td>800+</td>
                             <td>-</td>
                         </tr>
                         <tr>
                             <td>Full Body</td>
                             <td>600+</td>
-                            <td>800+</td>
+                            <td>900+</td>
                             <td>-</td>
                         </tr>
                     </table>
                 </div>
                 <div className="text_bottom_table">
-                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาสำหรับ Personal use only (Commercial use ตอนนี้ขอยังไม่รับนะคะ) </p>
-                    <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 80% จากราคาสเกลนั้น ๆ ค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาสำหรับ Personal use only (Commercial use x2)</p>
+                    <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 90% จากราคาสเกลนั้น ๆ ค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาเริ่มต้นถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
                     <p><i class="fas fa-star-of-life"></i> ลงสีพื้นหลังแบบตัวอย่างหรือแบบง่าย ๆ ให้ฟรีค่า</p>
                 </div><br/>
             </div>
             <div className="pic_scale">
                 {picElementsScale}
-            </div>
+            </div><br/>
 
             <br/><hr class="dashed"></hr><br/>
 
@@ -118,10 +112,9 @@ function Commission() {
             </div>    
             <div className="informdescription">
                 <p>เป็นเส้นแบบรัฟ ๆ นะคะ แต่จะเก็บเส้นให้แล้วก็ถมดำเรียบ ๆ ให้ค่า</p> 
-                <p>ถ้าต้องการลงแสงเงาเพิ่มเติมแบบรูปตัวอย่าง 2 รูปหลัง จะบวกเพิ่ม 50 บาทค่า</p>  
-                <p>(Brush ที่ใช้จะเป็นแบบเดียวกับรูปตัวอย่าง 2 รูปหลังนะคะ)</p>  
+                <p>ถ้าต้องการลงแสงเงาเพิ่มเติมแบบรูปตัวอย่าง 3 รูปหลัง จะบวกเพิ่ม 50+ ตามรายละเอียดค่า</p>  
             </div>
-            <div className="app-grid" id="cms">
+            <div className="app-grid" id="cms-six">
                 {picElementsLINE}
             </div>
 
@@ -131,9 +124,10 @@ function Commission() {
                 <p>COLOR</p>
             </div> 
             <div className="informdescription">
-                <p>เป็นเส้นแบบ Sketch เก็บเส้นให้เหมือนกัน เพิ่มเติมคือลงสีลงเงาและสาดแสงแบบง่าย ๆ แต่ดูดีให้ค่า</p>  
+                <p>เป็นเส้นแบบ Sketch เก็บเส้นให้เหมือนกัน เพิ่มเติมคือลงสีลงเงาและสาดแสงแบบง่าย ๆ แต่ดูดีให้ค่า</p> 
+                <p>เราไม่ค่อยถนัดลงสีโทนมืดเท่าไรนะคะ จะถนัดโทนอบอุ่นสว่าง ๆ มากกว่าค่า</p>   
             </div><br/>
-            <div className="app-grid" id="cms">
+            <div className="app-grid" id="cms-six">
                 {picElementsCOLOR}
             </div>
 
@@ -144,13 +138,15 @@ function Commission() {
                 <p>PAINTING</p>
             </div> 
             <div className="informdescription">
-                <p>ลงสีแบบทับเส้น จะเก็บเส้นและสาดสีสาดแสงแบบจัดเต็มให้ค่า อยากได้โทนสีหรือสไตล์แบบไหนก็บอกได้เลยค่า</p>  
+                <p>ลงสีแบบทับเส้น จะเก็บเส้นให้เรียบร้อยสวยงามและสาดสีสาดแสงแบบจัดเต็มให้ค่า อยากได้โทนสีหรือสไตล์แบบไหนก็บอกได้เลยค่า</p>  
             </div><br/>
-            <div className="app-grid" id="cms">
+            <div className="app-grid" id="cms-six">
                 {picElementsPAINTING}
             </div><br/>
 
             {picPost}
+
+            <br/><hr class="dashed"></hr><br/><br/>
 
             <div className="etc" id="candoit">
                 <div className="etc_topic">
@@ -179,7 +175,7 @@ function Commission() {
 
             <div className="etc" id="process">
                 <div className="etc_topic" id="process">
-                    <h1>WORK PROCESS</h1>
+                    <h1>WORKING PROCESS</h1>
                 </div>
                 <div className="process-grid">
                     <div className="process"> 
@@ -205,7 +201,7 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-palette"></i> 
                         <p>4.ลงสี</p>
-                        <h4>เมื่อภาพร่างผ่านแล้ว <h4 id="underline">เราจะลงสีคร่าว ๆ แล้วส่งให้ตรวจดูค่า</h4> เมื่อลูกค้าพอใจแล้ว สำหรับ Color เราก็จะส่งงานให้เลยค่ะ ส่วน Painting ก็จะเริ่มทับเส้นเก็บงานเลย</h4>
+                        <h4>เมื่อภาพร่างผ่านแล้ว <h4 id="underline">เราจะลงสีคร่าว ๆ แล้วส่งให้ตรวจดูค่า</h4> เมื่อลูกค้าพอใจแล้ว สำหรับ Color เราก็จะส่งงานให้เลย ส่วน Painting ก็จะเริ่มทับเส้นเก็บงานเลยค่า</h4>
                     </div>
 
                     <div className="process"> 
@@ -227,14 +223,14 @@ function Commission() {
                     <p><i class="fas fa-star-of-life"></i> ขอไม่รับงานเร่งนะคะ รันคิวตามลำดับการบรีฟค่า</p>
                     <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ทั้งหมด 3 ครั้ง / Color & Painting แก้ได้ทั้งหมด 5 ครั้ง</p>
                     <p><i class="fas fa-star-of-life"></i> นอกจากนี้จะขอเก็บเพิ่มเติมตามรายละเอียดนะคะ แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจมีการเปลี่ยนแปลงไปตามเวลา ดังนั้นขอให้ยึดลายเส้นที่เราโพสในช่วง ๆ นั้นเป็นหลักนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจมีการเปลี่ยนแปลงไปตามเวลา ดังนั้นขอให้ยึดลายเส้นช่วงปัจจุบันของเราเป็นหลักนะคะ</p>
                     <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยค่า</p>
                     <br/>
                     <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
                     <p><i class="fas fa-dot-circle"></i> ธนาคารกสิกรไทย / TrueWallet (+15)</p>
                 </div>
                 <br/>
-                <p><i class="fas fa-dot-circle"></i> ไฟล์ภาพจะปรับตามความเหมาะสมของภาพนะคะ โดยปกติจะใช้ขนาด 1500*1500px และ 1500*2000px / Resolution 300dpi</p>
+                <p><i class="fas fa-dot-circle"></i> ไฟล์ภาพจะปรับตามความเหมาะสมของภาพนะคะ โดยปกติจะใช้ขนาด 1500*2000px / Resolution 300dpi</p>
                 <p><i class="fas fa-dot-circle"></i> แต่ถ้าต้องการขนาดอื่นสามารถบอกขนาดไฟล์ภาพที่ต้องการกับเราก่อนเริ่มงานได้เลยค่า</p>
                 <p><i class="fas fa-dot-circle"></i> เราจะส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
                 <br/>
@@ -248,7 +244,7 @@ function Commission() {
             <div className="queue">
                 <i class="fas fa-chevron-right light"></i>
                 <i class="fas fa-chevron-right"></i>
-                <a href="https://docs.google.com/spreadsheets/d/1xZ7PbGFoHv0L9RyDI7TWlDJMl6l6vjACCkNOcOppdTI/edit#gid=0">Queue & Status</a>
+                <a href="/status"> Queue & Status </a>
                 <i class="fas fa-chevron-left"></i>
                 <i class="fas fa-chevron-left light"></i>
             </div>

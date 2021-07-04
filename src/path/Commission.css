@@ -2,26 +2,36 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 16px;
-    row-gap: 16px;
-    max-width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    padding-inline-start: 15%;
-    padding-inline-end: 15%;
-    
+    padding-inline-start: 20%;
+    padding-inline-end: 20%;
 }
 
+.app-grid#cms-six{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%; 
+}
 
 @media screen and (max-width: 750px) { 
     .app-grid#cms{
-        grid-template-columns: 1fr 1fr;    
+        grid-template-columns: 1fr 1fr 1fr;
         padding-inline-start: 5%;
-        padding-inline-end: 5%;
-        max-width: 70%;
+        padding-inline-end: 5%; 
+        max-width: 90%;
     }
+    .app-grid#cms-six{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-inline-start: 5%;
+        padding-inline-end: 5%; 
+        max-width: 90%;
+    }
+    .app-grid#cms-five{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-inline-start: 5%;
+        padding-inline-end: 5%; 
+        max-width: 90%;
+    }
+    
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -43,14 +53,11 @@
 .linecolor p {
     font-size: 50px;
     color: #262223;
-    font-weight: bold;
     padding: 0.5rem;
     text-align: center;
-    width: 60%;
     margin: 1rem auto;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-bottom: -10px;
 }
 
 .type_color {
@@ -84,6 +91,10 @@
     text-align: center;
     padding-inline-start: 20%;
     padding-inline-end: 20%;
+}
+
+.informdescription {
+    margin-bottom: 10px;
 }
 
 
@@ -278,6 +289,8 @@ table{
     margin-left: auto;
     margin-right: auto;
     width: 100%; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
 }
 
 table  tr{
@@ -291,7 +304,7 @@ table  tr.head{
 table th, table td {
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 100;
-    padding: 20px 70px; 
+    padding: 25px 70px; 
 }
 table th{
     font-family: 'Prompt', sans-serif;
@@ -314,7 +327,7 @@ table tr:nth-child(even) {
     border-radius: 1rem;
     margin: 1rem auto;
     padding: 1.5rem;
-    margin-top: -20px;
+    margin-top: -10px;
     background-color: #c7e4de;
 }
 
@@ -330,13 +343,13 @@ table tr:nth-child(even) {
         font-size: 20px;
     } 
     table th, table td {
-        padding: 20px 60px; 
+        padding: 25px 60px; 
     }
 }
 
 @media screen and (max-width: 1600px) {
     table th, table td {
-        padding: 20px 80px; 
+        padding: 25px 80px; 
     }
     .pic_scale {
         max-width: 35%;
@@ -348,13 +361,13 @@ table tr:nth-child(even) {
         padding: 20px 60px; 
     }
     .pic_scale {
-        margin-bottom: 8%;
+        margin-bottom: 3%;
     }
 }
 
 @media screen and (max-width: 1200px) { 
     .pic_scale {
-        max-width: 30%;
+        max-width: 25%;
         padding-inline-start: 0%;
         display: block;
         margin-left: auto;

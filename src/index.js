@@ -8,7 +8,7 @@ import App from './App';
 import Color from './path/Color';
 import Home from './path/Home';
 import Line from './path/Line';
-import Status from './path/ReactTabletop';
+import Status from './path/Status';
 import Commission from './path/Commission';
 
 ReactDOM.render(
@@ -18,6 +18,7 @@ ReactDOM.render(
     <Route path="/color" exact component={Color}/>
     <Route path="/line" exact component={Line}/>
     <Route path="/commission" exact component={Commission}/>
+    <Route path="/status" exact component={Status}/>
   </Switch>
   </BrowserRouter>, document.getElementById('root')
 );
