@@ -20,3 +20,15 @@
     zoom: 100%;
   }
 }
+
+@media screen and (max-width: 400px) {  
+  * {
+    zoom: 90%;
+  }
+}
+
+@media screen and (max-width: 250px) {  
+  * {
+    zoom: 85%;
+  }
+}

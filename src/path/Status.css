@@ -27,17 +27,18 @@ tr p {
 }
 
 tr p#type {
-    background-color: #DDC6B6;
-    color: #262223;
+    background-color: #f9e0dc;
+    color: #595a5c;
 }
 tr p#scale {
-    background-color: #ddc6b663;
-    color: #262223;
+    background-color: #f9e0dc85;
+    color: #595a5c;
+
 }
 
 tr p#status {
     padding: 10px;
     padding-top: 10px;
-    background-color: black;
-    color: #DDC6B6;
+    background-color: #595a5c;
+    color: #f9e0dc;
 }

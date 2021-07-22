@@ -70,26 +70,26 @@ function Commission() {
                         </tr>
                         <tr>
                             <td>Bust-Up</td>
-                            <td>350+</td>
-                            <td>500+</td>
-                            <td>800+</td>
+                            <td>350</td>
+                            <td>600</td>
+                            <td>800</td>
                         </tr>
                         <tr>
                             <td>Half Body</td>
-                            <td>400+</td>
-                            <td>700+</td>
-                            <td>1000+</td>
+                            <td>400</td>
+                            <td>700</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>Knee-Up</td>
-                            <td>500+</td>
-                            <td>800+</td>
+                            <td>500</td>
+                            <td>800</td>
                             <td>-</td>
                         </tr>
                         <tr>
                             <td>Full Body</td>
-                            <td>600+</td>
-                            <td>900+</td>
+                            <td>600</td>
+                            <td>900</td>
                             <td>-</td>
                         </tr>
                     </table>
@@ -97,10 +97,12 @@ function Commission() {
                 <div className="text_bottom_table">
                     <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาสำหรับ Personal use only (Commercial use x2)</p>
                     <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 90% จากราคาสเกลนั้น ๆ ค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาเริ่มต้นถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาเริ่มต้น ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
                     <p><i class="fas fa-star-of-life"></i> ลงสีพื้นหลังแบบตัวอย่างหรือแบบง่าย ๆ ให้ฟรีค่า</p>
+
                 </div><br/>
             </div>
+
             <div className="pic_scale">
                 {picElementsScale}
             </div><br/>
@@ -111,8 +113,8 @@ function Commission() {
                 <p>SKETCH</p>
             </div>    
             <div className="informdescription">
-                <p>เป็นเส้นแบบรัฟ ๆ นะคะ แต่จะเก็บเส้นให้แล้วก็ถมดำเรียบ ๆ ให้ค่า</p> 
-                <p>ถ้าต้องการลงแสงเงาเพิ่มเติมแบบรูปตัวอย่าง 3 รูปหลัง จะบวกเพิ่ม 50+ ตามรายละเอียดค่า</p>  
+                <p>เป็นเส้นแบบรัฟ ๆ แต่จะเก็บเส้นให้เรียบร้อยไม่รกตาแน่นอนค่ะ! แล้วก็ถมดำหรือลงสีพื้นง่าย ๆ ให้ค่า</p> 
+                <p>(ถมดำให้ฟรีค่า แต่ถ้าเป็นลงสีพื้นจะบวกเพิ่ม 50-100 บาทตามรายละเอียดนะคะ)</p>  
             </div>
             <div className="app-grid" id="cms-six">
                 {picElementsLINE}
@@ -124,8 +126,7 @@ function Commission() {
                 <p>COLOR</p>
             </div> 
             <div className="informdescription">
-                <p>เป็นเส้นแบบ Sketch เก็บเส้นให้เหมือนกัน เพิ่มเติมคือลงสีลงเงาและสาดแสงแบบง่าย ๆ แต่ดูดีให้ค่า</p> 
-                <p>เราไม่ค่อยถนัดลงสีโทนมืดเท่าไรนะคะ จะถนัดโทนอบอุ่นสว่าง ๆ มากกว่าค่า</p>   
+                <p>เป็นเส้นแบบ Sketch เพิ่มเติมคือลงสี ลงเงา สาดแสงและเก็บลายละเอียดบางส่วนให้ภาพดูดีดูปังค่า</p>
             </div><br/>
             <div className="app-grid" id="cms-six">
                 {picElementsCOLOR}
@@ -138,7 +139,7 @@ function Commission() {
                 <p>PAINTING</p>
             </div> 
             <div className="informdescription">
-                <p>ลงสีแบบทับเส้น จะเก็บเส้นให้เรียบร้อยสวยงามและสาดสีสาดแสงแบบจัดเต็มให้ค่า อยากได้โทนสีหรือสไตล์แบบไหนก็บอกได้เลยค่า</p>  
+                <p>เพิ่มเติมจาก Color คือจะทับเส้น เก็บเส้น เก็บลายละเอียดทุกอย่างให้อย่างเรียบร้อยสวยงามเลยค่า</p>
             </div><br/>
             <div className="app-grid" id="cms-six">
                 {picElementsPAINTING}
@@ -146,7 +147,7 @@ function Commission() {
 
             {picPost}
 
-            <br/><hr class="dashed"></hr><br/><br/>
+            <br/><hr class="dashed"></hr><br/>
 
             <div className="etc" id="candoit">
                 <div className="etc_topic">
@@ -157,7 +158,7 @@ function Commission() {
                     <p><i class="fas fa-check"></i> Original Characters</p>
                     <p><i class="fas fa-check"></i> Fanarts</p>
                     <p><i class="fas fa-check"></i> NL / BL / GL</p>
-                    <p><i class="fas fa-star-of-life"></i> ทักมาสอบถามเพิ่มเติมก่อนได้นะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> ทักมาสอบถามเพิ่มเติมก่อนได้เลยค่า</p>
                     <br/>
                 </div> 
                 <div className="red candoit">
@@ -167,11 +168,8 @@ function Commission() {
                     <p><i class="fas fa-times"></i> Elderly People </p>
                     <p><i class="fas fa-times"></i> Perspective BG</p>
                 </div>
-                <br/>
                          
             </div>
-
-            <br/>
 
             <div className="etc" id="process">
                 <div className="etc_topic" id="process">
@@ -181,9 +179,8 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-list-alt"></i> 
                         <p>1.บรีฟงาน</p>
-                        <h4>แจ้ง Scale Type รายละเอียดของตัวละครต่าง ๆ ทาง IB หรือ DM 
-                        <h4 id="underline"> ในส่วนของการบรีฟท่าทางของตัวละคร รบกวนไม่นำงานของนักวาดท่านอื่นมาบรีฟนะคะ </h4> อาจจะเขียนอธิบายหรือวาดเป็นน้องก้างปลามาก็ได้ค่า
-                        </h4>
+                        <h4>ติดต่อเรามาทาง IB หรือ DM แจ้ง <h4 id="underline">Scale/ Type/ รายละเอียด อารมณ์ ท่าทางของตัวละคร/ โทนสีภาพ/ etc</h4> มาได้เลยค่า
+                        <h4 id="underline"> ในส่วนของการบรีฟท่าทางของตัวละคร รบกวนไม่นำงานของนักวาดท่านอื่นมาบรีฟนะคะ </h4> อาจจะเขียนอธิบายหรือวาดเป็นน้องก้างปลามาก็ได้ค่า</h4>
                     </div>
                     
                     <div className="process"> 
@@ -207,12 +204,10 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-paper-plane"></i> 
                         <p>5.ส่งงาน</p>
-                        <h4>เมื่อเราเก็บงานเสร็จแล้ว <h4 id="underline">เราจะส่งภาพที่เสร็จแล้วให้ตรวจดูค่า</h4> จากนั้นถ้าลูกค้าพอใจกับงานเรียบร้อยแล้ว และสำหรับผู้ที่จ่ายมัดจำก่อนเมื่อจ่ายอีกครึ่งครบแล้ว เราก็จะส่งงานผ่านทาง E-mail หรือ google drive ให้เลยค่า</h4>
+                        <h4>เมื่อเราเก็บงานเสร็จแล้ว <h4 id="underline">เราจะส่งภาพที่เสร็จแล้วให้ตรวจดูค่า</h4> จากนั้นถ้าลูกค้าพอใจกับงานเรียบร้อยแล้ว และสำหรับผู้ที่จ่ายมัดจำก่อนเมื่อจ่ายอีกครึ่งครบแล้ว เราก็จะส่งงานผ่านทาง E-mail ให้เลยค่า</h4>
                     </div>
                 </div>
             </div>
-
-            <br/>
 
             <div className="etc">
                 <div className="etc_topic">
@@ -221,30 +216,28 @@ function Commission() {
                 <br/>
                 <div className="red">
                     <p><i class="fas fa-star-of-life"></i> ขอไม่รับงานเร่งนะคะ รันคิวตามลำดับการบรีฟค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ทั้งหมด 3 ครั้ง / Color & Painting แก้ได้ทั้งหมด 5 ครั้ง</p>
-                    <p><i class="fas fa-star-of-life"></i> นอกจากนี้จะขอเก็บเพิ่มเติมตามรายละเอียดนะคะ แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจมีการเปลี่ยนแปลงไปตามเวลา ดังนั้นขอให้ยึดลายเส้นช่วงปัจจุบันของเราเป็นหลักนะคะ</p>
-                    <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยค่า</p>
-                    <br/>
-                    <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์</p>
+                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ทั้งหมด 3 ครั้ง / Color & Painting แก้ได้ทั้งหมด 5 ครั้ง นอกจากนี้จะเก็บเพิ่มครั้งละ 50 บาท แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> ในส่วนของการลงสีเราไม่ค่อยถนัดลงสีโทนมืดเท่าไรนะคะ จะถนัดโทนอบอุ่นสว่าง ๆ มากกว่าค่า</p>  
+                    <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจมีการเปลี่ยนแปลงไปตามเวลา ดังนั้นขอให้ยึดลายเส้นช่วงปัจจุบันของเราเป็นหลักนะคะ</p> 
+                    <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ (โดยใส่ลายน้ำให้ค่า) แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยนะคะ</p>
+                    <br/><hr class="dashed" id="etc"></hr><br/>
+                    <p><i class="fas fa-dot-circle"></i> ระยะเวลาทำงาน : ประมาณ 3 วัน - 1 อาทิตย์ (ขึ้นอยู่กับลายละเอียดของงานนะคะ)</p>
                     <p><i class="fas fa-dot-circle"></i> ธนาคารกสิกรไทย / TrueWallet (+15)</p>
                 </div>
-                <br/>
+                <br/><hr class="dashed" id="etc"></hr><br/>
                 <p><i class="fas fa-dot-circle"></i> ไฟล์ภาพจะปรับตามความเหมาะสมของภาพนะคะ โดยปกติจะใช้ขนาด 1500*2000px / Resolution 300dpi</p>
                 <p><i class="fas fa-dot-circle"></i> แต่ถ้าต้องการขนาดอื่นสามารถบอกขนาดไฟล์ภาพที่ต้องการกับเราก่อนเริ่มงานได้เลยค่า</p>
                 <p><i class="fas fa-dot-circle"></i> เราจะส่งให้ทั้งหมด 2 ไฟล์นะคะ คือ JPG และ PNG ค่า</p>
-                <br/>
-                <p><i class="fas fa-dot-circle"></i> สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณไหนได้เลยค่า</p>
-                <p><i class="fas fa-dot-circle"></i> มีอะไรอยากสอบถามเพิ่มเติมติดต่อเรามาทาง IB หรือ DM ได้เลยนะคะ (^○^)</p>
+  
+                <p><i class="fas fa-dot-circle"></i> สามารถดูงานเราแล้วบอกก็ได้ว่าอยากได้ประมาณแบบภาพไหนได้เลยค่า</p>
+                <p><i class="fas fa-dot-circle"></i> สามารถสอบถามเพิ่มเติมได้ทาง IB หรือ DM ได้ตลอดเลยนะคะ (^-^)</p>
                 <br/>
             </div>
-
-            <br/>
 
             <div className="queue">
                 <i class="fas fa-chevron-right light"></i>
                 <i class="fas fa-chevron-right"></i>
-                <a href="/status"> Queue & Status </a>
+                <a href="/status"> QUEUE & STATUS </a>
                 <i class="fas fa-chevron-left"></i>
                 <i class="fas fa-chevron-left light"></i>
             </div>

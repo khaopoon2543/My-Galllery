@@ -8,11 +8,11 @@
     max-width: 300px;
     height: auto;
     padding: 30px;
-    margin-top: 20px;
 }
 
 .about-me {
     text-align: center;
+    color: #595a5c;
 }
 
 .about-me h4{
@@ -29,7 +29,7 @@
 .about-me i {
     font-size: 30px;
     padding: 10px;
-    color:#26222365;
+    color:#f8d7ce;
 }
 
   

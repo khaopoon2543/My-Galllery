@@ -42,17 +42,14 @@
 }
 
 @media screen and (max-width: 1500px) {
-    
     .pic-post-content img {
         max-height: calc(100vh - 200px);
     }
-
 }
 
-@media screen and (max-width: 960px) {
-    
+@media screen and (max-width: 400px) {
     .pic-post-content img {
-        max-height: calc(100vh - 450px);
+        max-height: calc(100vh - 300px);
     }
-
 }
+

@@ -75,7 +75,7 @@ function Color() {
             <br/>
 
             <div className="center">
-                <button onClick={handleShowMorePosts}>Load More</button>
+                <button onClick={handleShowMorePosts}>LOAD MORE</button>
             </div>
 
             <br/><br/><br/>

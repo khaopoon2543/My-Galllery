@@ -8,27 +8,28 @@
 
 .app-grid#cms-six{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
     padding-inline-start: 10%;
     padding-inline-end: 10%; 
+
+}
+
+@media screen and (max-width: 960px) { 
+
+    .app-grid#cms-six{
+        padding-inline-start: 5%;
+        padding-inline-end: 5%; 
+    }
+    
 }
 
 @media screen and (max-width: 750px) { 
-    .app-grid#cms{
-        grid-template-columns: 1fr 1fr 1fr;
-        padding-inline-start: 5%;
-        padding-inline-end: 5%; 
-        max-width: 90%;
-    }
+
     .app-grid#cms-six{
         grid-template-columns: 1fr 1fr 1fr;
-        padding-inline-start: 5%;
-        padding-inline-end: 5%; 
-        max-width: 90%;
-    }
-    .app-grid#cms-five{
-        grid-template-columns: 1fr 1fr 1fr;
-        padding-inline-start: 5%;
-        padding-inline-end: 5%; 
+        padding-inline-start: 0%;
+        padding-inline-end: 0%; 
         max-width: 90%;
     }
     
@@ -43,16 +44,9 @@
     align-items: center;
 }
 
-.linecolor h4{
-    font-size: 40px;
-    margin-top: 30px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
-}
-
 .linecolor p {
     font-size: 50px;
-    color: #262223;
+    color: #595a5c;
     padding: 0.5rem;
     text-align: center;
     margin: 1rem auto;
@@ -60,120 +54,113 @@
     margin-right: 5rem;
 }
 
-.type_color {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-}
-
-.type_color p{
-    font-family: 'Prompt', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    background-color: #262223;
-    color: #DDC6B6;
-    padding: 5px;
-} 
-
-@media screen and (max-width: 960px) {
-      
-    .linecolor p {
-        font-size: 50px;
-    }
-    .type_color p{
-        font-size: 30px;
-    }
-
-}
-
 .informdescription p{
     font-family: 'Prompt', sans-serif;
     text-align: center;
-    padding-inline-start: 20%;
-    padding-inline-end: 20%;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
 }
 
-.informdescription {
-    margin-bottom: 10px;
-}
+@media screen and (max-width: 960px) {
 
+    .linecolor p {
+        font-size: 50px;
+    } 
+
+}
 
 /*------------------------------------------------------------------------------------------------------*/
 
 .etc{
-    background-color: #262223;
+    background-color: #595a5c;
     margin: 1rem auto;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 1.5rem;
     border-radius: 1rem;
+    margin-bottom: 2rem;
+
 }
 
 .etc_topic h1{
+    font-weight: 500;
     text-align: center;
     font-family: 'Prompt', sans-serif;
-    font-weight: 100;
     font-size: 40px;
-    color: white;
+    color: #fff;
 }
 
 .etc p{
     font-family: 'Prompt', sans-serif;
     text-align: left;
-    font-size: 16px;
     margin-left: 5%;
     margin-right: 5%;
-    color: white;
+    color: #fff;
 }
 
 .etc .red p{
-    color: #DDC6B6	;
+    color: #f9e0dc	;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
 
 .etc#candoit {
     display:block;
-    background: #262223;
     overflow:auto;
+    background-color: #f9e0dc;
 }
 .candoit{
     width: 50%;
     text-align: center;
-    padding-inline-start: 10%;
-    padding-inline-end: 10%;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
     padding-bottom: 2%;
 }
 
 .etc#candoit .red {
     float: right;
+    padding-inline-end: 20%;
 }
 
 .etc#candoit .white {
     float: left;
+    padding-inline-start: 20%;
+}
+
+.etc#candoit h1{
+    color: #595a5c	;
+}
+.etc#candoit .red p{
+    color: #595a5c	;
+}
+.etc#candoit .white p{
+    color: #595a5c	;
 }
 
 .border-right {
-    border-right: 3px outset #f3f3f3;
+    border-right: 3px double #595a5c;
 }
 
-@media screen and (max-width: 960px) {   
-    .candoit{
-        padding-inline-start: 5%;
-        padding-inline-end: 5%;
+@media screen and (max-width: 750px) {   
+    
+    .etc#candoit .red {
+        padding-inline-end: 10%;
     }
+
+    .etc#candoit .white {
+        padding-inline-start: 10%;
+    }
+    
 }
 
 /*------------------------------------------------------------------------------------------------------*/
 
 .etc#process {
-    background-color: #f3f3f3;
-
+    background-color: #f8f4f3;
 }
 
 .etc_topic#process h1{
-    font-weight: 500;
-    color: #262223;
+    color: #595a5c;
 }
 
 .process-grid {
@@ -196,7 +183,7 @@
     text-align: center;
     font-size: 30px;
     color: white;
-    background-color: #262223;
+    background-color: #595a5c;
     border-radius: 50%;
     padding: 20px;   
     margin-bottom: 10px;
@@ -206,7 +193,7 @@
     font-family: 'Prompt', sans-serif;
     text-align: center;
     background-color: #ffff;
-    color: #262223;
+    color: #595a5c;
     font-size: 25px;
     border-radius: 30px 30px 30px 30px;
     margin-bottom: 10px;
@@ -215,7 +202,7 @@
 .process h4{
     font-family: 'Prompt', sans-serif;
     text-align: left;
-    color: #262223;
+    color: #595a5c;
     margin-top: 10px;
     padding-inline-start: 25px;
     padding-inline-end: 25px;
@@ -224,8 +211,8 @@
 
 .process h4#underline{
     display: inline;
-    color: #262223;
-    background-color: #DDC6B6;
+    color: #595a5c;
+    background-color: #f9e0dc;
     padding: auto;
     padding-inline-start: 0px;
     padding-inline-end: 0px;
@@ -289,30 +276,33 @@ table{
     margin-left: auto;
     margin-right: auto;
     width: 100%; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
+    box-shadow: 0 0 20px #f8f4f3;
 }
 
 table  tr{
     text-align: center;
 }
 table  tr.head{
-    background-color: #262223;
-    color: #DDC6B6;
+    background-color: #595a5c;
+    color: #eee7e1;
     font-size: 25px;
 }
 table th, table td {
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 100;
     padding: 25px 70px; 
+    
 }
 table th{
     font-family: 'Prompt', sans-serif;
 }
     
 table tr:nth-child(even) {
-    color: #262223;
-    background-color: #f2f2f2;
+    color: #595a5c;
+    background-color: #f8f4f3;
+}
+table tr{
+    color: #595a5c;
 }
 
 .text_bottom_table p{
@@ -320,7 +310,7 @@ table tr:nth-child(even) {
     text-align: left;
     padding-inline-start: 5%;
     padding-inline-end: 5%;
-    color: #31675C;
+    color: #a57e74;
 }
 
 .text_bottom_table {
@@ -328,7 +318,7 @@ table tr:nth-child(even) {
     margin: 1rem auto;
     padding: 1.5rem;
     margin-top: -10px;
-    background-color: #c7e4de;
+    background-color: #f8f4f3;
 }
 
 @media screen and (max-width: 1900px) {
@@ -407,6 +397,8 @@ table tr:nth-child(even) {
         width: 90%; 
         margin-left:5%; 
         margin-right:5%;
+        table-layout: fixed;
+
     }
 }
 
@@ -420,10 +412,23 @@ table tr:nth-child(even) {
 /*------------------------------------------------------------------------------------------------------*/
 
 hr.dashed {
-    border-top: 3px double #DDC6B6;
+    border-top: 3px double #eee7e1;
     margin-left: 10%;
     margin-right: 10%;
 } 
+
+hr.dashed#etc {
+    border-top: 1px inset #f9e0dc;
+    margin-left: 5%;
+    margin-right: 5%;
+} 
+
+@media screen and (max-width: 960px) {
+    hr.dashed {
+        margin-left: 5%;
+        margin-right: 5%;
+    } 
+}
 
 /*------------------------------------------------------------------------------------------------------*/
   
@@ -433,8 +438,8 @@ hr.dashed {
 
 .contact i{
     font-size: 30px;
-    color: #DDC6B6;
-    background-color: #262223;
+    color: #f9e0dc;
+    background-color: #595959;
     border-radius: 50%;
     padding: 20px;   
     margin-right: 20px;
@@ -452,8 +457,8 @@ hr.dashed {
 .queue a{
     font-family: 'Prompt', sans-serif;
     font-size: 20px;
-    background-color: #DDC6B6;
-    color: #262223;
+    background-color: #f9e0dc;
+    color: #595a5c;
     text-decoration: none;
     cursor: pointer;
     border-radius: 2rem;
@@ -462,22 +467,22 @@ hr.dashed {
 }
 
 .queue a:hover {
-    background-color: #262223;
-    color: #DDC6B6;
+    background-color: #595a5c;
+    color: #fcd0c9;
     transition: all 0.3s ease-out ;
 }
 
 .queue i{
     font-size: 80px;
     padding: 20px;
-    color: #DDC6B6;
+    color: #f9e0dc;
 }
 
 .queue i.light{
     padding: 0px;
     margin-left: -20px;
     margin-right: -20px;
-    color: #ddc6b679;
+    color: #fcd0c963;
 }
 
 @media screen and (max-width: 1500px) {
