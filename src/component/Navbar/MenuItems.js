@@ -10,7 +10,7 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'COLOR',
+        title: 'COLORFUL',
         url: '/color',
         cName: 'nav-links'
     },

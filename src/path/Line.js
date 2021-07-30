@@ -42,7 +42,7 @@ function Line() {
             <br/>
             <div className="head-topic">
                 <h4>S K E T C H</h4>
-                <p>งานรัฟงานเส้นอย่างคูล</p>
+                <p>งานรัฟงานเส้นอย่างคูล (Black White & Flat Color)</p>
             </div>
             <br/>
 

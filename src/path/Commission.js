@@ -58,100 +58,17 @@ function Commission() {
             </div>     
 
             <br/>
-
-            <div className="table_edit">
-                <div className="table">
-                    <table>
-                        <tr className="head">
-                            <th>SCALE</th>
-                            <th>SKETCH</th>
-                            <th>COLOR</th>
-                            <th>PAINTING</th>
-                        </tr>
-                        <tr>
-                            <td>Bust-Up</td>
-                            <td>350</td>
-                            <td>600</td>
-                            <td>800</td>
-                        </tr>
-                        <tr>
-                            <td>Half Body</td>
-                            <td>400</td>
-                            <td>700</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Knee-Up</td>
-                            <td>500</td>
-                            <td>800</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Full Body</td>
-                            <td>600</td>
-                            <td>900</td>
-                            <td>-</td>
-                        </tr>
-                    </table>
-                </div>
-                <div className="text_bottom_table">
-                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาสำหรับ Personal use only (Commercial use x2)</p>
-                    <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 90% จากราคาสเกลนั้น ๆ ค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาเริ่มต้น ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
-                    <p><i class="fas fa-star-of-life"></i> ลงสีพื้นหลังแบบตัวอย่างหรือแบบง่าย ๆ ให้ฟรีค่า</p>
-
-                </div><br/>
+            <div className="button">
+                <a href="#price" id="buttonprice"> PRICE & EXAMPLE</a>
+                <a href="/status" id="buttonstatus"> QUEUE & STATUS </a>
+                
             </div>
+            <br/>
 
-            <div className="pic_scale">
-                {picElementsScale}
-            </div><br/>
-
-            <br/><hr class="dashed"></hr><br/>
-
-            <div className="linecolor">
-                <p>SKETCH</p>
-            </div>    
-            <div className="informdescription">
-                <p>เป็นเส้นแบบรัฟ ๆ แต่จะเก็บเส้นให้เรียบร้อยไม่รกตาแน่นอนค่ะ! แล้วก็ถมดำหรือลงสีพื้นง่าย ๆ ให้ค่า</p> 
-                <p>(ถมดำให้ฟรีค่า แต่ถ้าเป็นลงสีพื้นจะบวกเพิ่ม 50-100 บาทตามรายละเอียดนะคะ)</p>  
-            </div>
-            <div className="app-grid" id="cms-six">
-                {picElementsLINE}
-            </div>
-
-            <br/><hr class="dashed"></hr><br/>
-
-            <div className="linecolor">
-                <p>COLOR</p>
-            </div> 
-            <div className="informdescription">
-                <p>เป็นเส้นแบบ Sketch เพิ่มเติมคือลงสี ลงเงา สาดแสงและเก็บลายละเอียดบางส่วนให้ภาพดูดีดูปังค่า</p>
-            </div><br/>
-            <div className="app-grid" id="cms-six">
-                {picElementsCOLOR}
-            </div>
-
-            <br/><hr class="dashed"></hr><br/>
-
-
-            <div className="linecolor">
-                <p>PAINTING</p>
-            </div> 
-            <div className="informdescription">
-                <p>เพิ่มเติมจาก Color คือจะทับเส้น เก็บเส้น เก็บลายละเอียดทุกอย่างให้อย่างเรียบร้อยสวยงามเลยค่า</p>
-            </div><br/>
-            <div className="app-grid" id="cms-six">
-                {picElementsPAINTING}
-            </div><br/>
-
-            {picPost}
-
-            <br/><hr class="dashed"></hr><br/>
 
             <div className="etc" id="candoit">
                 <div className="etc_topic">
-                    <h1>CAN & CAN'T</h1>
+                    <h1>DO & DON'T</h1>
                 </div>
                 <br/>
                 <div className="white candoit border-right">
@@ -159,16 +76,13 @@ function Commission() {
                     <p><i class="fas fa-check"></i> Fanarts</p>
                     <p><i class="fas fa-check"></i> NL / BL / GL</p>
                     <p><i class="fas fa-star-of-life"></i> ทักมาสอบถามเพิ่มเติมก่อนได้เลยค่า</p>
-                    <br/>
                 </div> 
                 <div className="red candoit">
                     <p><i class="fas fa-times"></i> R-18 / Gore</p>
                     <p><i class="fas fa-times"></i> Robot / Furry / Muscle</p>
-                    <p><i class="fas fa-times"></i> Realistic </p>
                     <p><i class="fas fa-times"></i> Elderly People </p>
                     <p><i class="fas fa-times"></i> Perspective BG</p>
-                </div>
-                         
+                </div>     
             </div>
 
             <div className="etc" id="process">
@@ -179,8 +93,7 @@ function Commission() {
                     <div className="process"> 
                         <i class="fas fa-list-alt"></i> 
                         <p>1.บรีฟงาน</p>
-                        <h4>ติดต่อเรามาทาง IB หรือ DM แจ้ง <h4 id="underline">Scale/ Type/ รายละเอียด อารมณ์ ท่าทางของตัวละคร/ โทนสีภาพ/ etc</h4> มาได้เลยค่า
-                        <h4 id="underline"> ในส่วนของการบรีฟท่าทางของตัวละคร รบกวนไม่นำงานของนักวาดท่านอื่นมาบรีฟนะคะ </h4> อาจจะเขียนอธิบายหรือวาดเป็นน้องก้างปลามาก็ได้ค่า</h4>
+                        <h4>ติดต่อเรามาทาง IB หรือ DM <h4 id="underline">แจ้งรายละเอียดต่าง ๆ ตาม Brief Form ทางด้านล่าง</h4> หรือรายละเอียดเพิ่มเติมอื่น ๆ มาได้เลยค่า</h4>
                     </div>
                     
                     <div className="process"> 
@@ -209,6 +122,24 @@ function Commission() {
                 </div>
             </div>
 
+            <div className="etc" id="candoit">
+                <div className="etc_topic">
+                    <h1>BRIEF FORM</h1>
+                </div>
+                <br/>
+                <div className="briefform">
+                    <p> <h4 id="underline">Type</h4> : Sketch (black white / flat color) / Color / Painting</p>
+                    <p> <h4 id="underline">Scale</h4> : Bust up / Half body / Knee up / Full body</p>
+                    <p> <h4 id="underline">รายละเอียดตัวละคร</h4> : แนบรูปของตัวละคร เสื้อผ้า เครื่องประดับ ฯลฯ จัดเต็มมาได้เลยค่า</p>
+                    <p> <h4 id="underline">อารมณ์ ท่าทาง</h4> : *รบกวนไม่นำผลงานของนักวาดท่านอื่นมาบรีฟนะคะ* เขียนอธิบายหรือถ้าสะดวกวาดเป็นน้องก้างปลามาก็ได้เลยค่า</p>
+                    <p> <h4 id="underline">โทนสีภาพ</h4> : เขียนอธิบายหรือแนบ Reference โทนสีภาพที่ต้องการมาได้เลยค่า</p>
+                    <p> <h4 id="underline">พื้นหลัง</h4> : สีขาว/ สี/ โปร่งใส/ ลวดลายง่าย ๆ (แนบ Reference ได้เลยค่า)</p>
+                    <p> <h4 id="underline">การนำงานไปใช้</h4> : Personal use / Commercial use</p>
+                <br/>
+                </div> 
+                
+            </div>
+
             <div className="etc">
                 <div className="etc_topic">
                     <h1>TERMS OF SERVICE</h1>
@@ -216,7 +147,7 @@ function Commission() {
                 <br/>
                 <div className="red">
                     <p><i class="fas fa-star-of-life"></i> ขอไม่รับงานเร่งนะคะ รันคิวตามลำดับการบรีฟค่า</p>
-                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ได้ทั้งหมด 3 ครั้ง / Color & Painting แก้ได้ทั้งหมด 5 ครั้ง นอกจากนี้จะเก็บเพิ่มครั้งละ 50 บาท แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> Sketch แก้ฟรี 3 ครั้ง / Color & Painting แก้ฟรี 5 ครั้ง นอกจากนี้จะเก็บเพิ่มครั้งละ 50 บาท แต่ถ้าเราวาดไม่ตรงบรีฟเองหรือแก้เล็ก ๆ น้อย ๆ เราไม่นับค่า</p>
                     <p><i class="fas fa-star-of-life"></i> ในส่วนของการลงสีเราไม่ค่อยถนัดลงสีโทนมืดเท่าไรนะคะ จะถนัดโทนอบอุ่นสว่าง ๆ มากกว่าค่า</p>  
                     <p><i class="fas fa-star-of-life"></i> ลายเส้นเราอาจมีการเปลี่ยนแปลงไปตามเวลา ดังนั้นขอให้ยึดลายเส้นช่วงปัจจุบันของเราเป็นหลักนะคะ</p> 
                     <p><i class="fas fa-star-of-life"></i> งานที่เสร็จเรียบร้อยแล้วเราจะนำไปเผยแพร่ลงใน FB/TW ของเรานะคะ (โดยใส่ลายน้ำให้ค่า) แต่ถ้าหากไม่สะดวกที่จะให้เผยแพร่ก็บอกเราได้เลยนะคะ</p>
@@ -234,14 +165,100 @@ function Commission() {
                 <br/>
             </div>
 
-            <div className="queue">
-                <i class="fas fa-chevron-right light"></i>
-                <i class="fas fa-chevron-right"></i>
-                <a href="/status"> QUEUE & STATUS </a>
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-left light"></i>
+            <br/><hr class="dashed" id="price"></hr><br/>
+
+            <div className="linecolor">
+                <p>P R I C E</p>
+            </div> 
+            <div className="table_edit">
+                <div className="table">
+                    <table>
+                        <tr className="head">
+                            <th>SCALE</th>
+                            <th>SKETCH</th>
+                            <th>COLOR</th>
+                            <th>PAINTING</th>
+                        </tr>
+                        <tr>
+                            <td>Bust up</td>
+                            <td>350</td>
+                            <td>600</td>
+                            <td>800</td>
+                        </tr>
+                        <tr>
+                            <td>Half body</td>
+                            <td>400</td>
+                            <td>700</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Knee up</td>
+                            <td>500</td>
+                            <td>800</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Full body</td>
+                            <td>600</td>
+                            <td>900</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+                <div className="text_bottom_table">
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาสำหรับ Personal use only (Commercial use x2)</p>
+                    <p><i class="fas fa-star-of-life"></i> เพิ่มตัวละครคิดราคา 90% จากราคาสเกลนั้น ๆ ค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> ราคานี้เป็นราคาเริ่มต้น ถ้ารายละเอียดเยอะเราขอเพิ่มราคาตามความเหมาะสมนะคะ</p>
+                    <p><i class="fas fa-star-of-life"></i> ลงสีพื้นหลังแบบตัวอย่างหรือแบบง่าย ๆ ให้ฟรีค่า</p>
+
+                </div><br/>
             </div>
-            <br/>
+
+            <div className="pic_scale">
+                {picElementsScale}
+            </div><br/>
+
+            <br/><hr class="dashed"></hr><br/>
+
+            <div className="linecolor">
+                <p>S K E T C H</p>
+            </div>   
+            <div className="informdescription">
+                <p>เป็นเส้นแบบรัฟ ๆ แต่จะเก็บเส้นให้เรียบร้อยไม่รกตาแน่นอนค่ะ! แล้วก็ถมดำหรือลงสีพื้นง่าย ๆ ให้ค่า</p> 
+                <p>(ถมดำให้ฟรีค่า แต่ถ้าเป็นลงสีพื้นจะบวกเพิ่ม 50-100 บาทตามรายละเอียดนะคะ)</p>  
+            </div>
+            <div className="app-grid" id="cms-six">
+                {picElementsLINE}
+            </div>
+
+            <br/><hr class="dashed"></hr><br/>
+
+            <div className="linecolor">
+                <p>C O L O R</p>
+            </div> 
+            <div className="informdescription">
+                <p>เป็นเส้นแบบ Sketch เพิ่มเติมคือลงสี ลงเงา สาดแสงและเก็บลายละเอียดบางส่วนให้ภาพดูดีดูปังค่า</p>
+            </div><br/>
+            <div className="app-grid" id="cms-six">
+                {picElementsCOLOR}
+            </div>
+
+            <br/><hr class="dashed"></hr><br/>
+
+
+            <div className="linecolor">
+                <p>P A I N T I N G</p>
+            </div> 
+            <div className="informdescription">
+                <p>เพิ่มเติมจาก Color คือจะทับเส้น เก็บเส้น เก็บลายละเอียดทุกอย่างให้อย่างเรียบร้อยสวยงามเลยค่า</p>
+            </div><br/>
+            <div className="app-grid" id="cms-six">
+                {picElementsPAINTING}
+            </div>
+
+            {picPost}
+
+            <br/><hr class="dashed"></hr><br/><br/>
             <div className="contact">
                     <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>

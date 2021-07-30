@@ -72,7 +72,7 @@
 /*------------------------------------------------------------------------------------------------------*/
 
 .etc{
-    background-color: #595a5c;
+    background-color: #f8f4f3;
     margin: 1rem auto;
     margin-left: 10%;
     margin-right: 10%;
@@ -87,7 +87,7 @@
     text-align: center;
     font-family: 'Prompt', sans-serif;
     font-size: 40px;
-    color: #fff;
+    color: #595a5c;
 }
 
 .etc p{
@@ -95,11 +95,11 @@
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
-    color: #fff;
+    color: #595a5c;
 }
 
 .etc .red p{
-    color: #f9e0dc	;
+    color: #595a5c	;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -149,6 +149,32 @@
 
     .etc#candoit .white {
         padding-inline-start: 10%;
+    }
+    
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+.briefform p{
+    color: #595959;
+    padding-inline-start: 15%;
+    padding-inline-end: 15%;
+}
+.briefform h4#underline{
+    font-weight: 100;
+    display: inline;
+    color: #595959;
+    background-color: #f8f4f3;
+    padding: auto;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+@media screen and (max-width: 1500px) {   
+    
+    .briefform p{
+        padding-inline-start: 0%;
+        padding-inline-end: 0%;
     }
     
 }
@@ -447,61 +473,52 @@ hr.dashed#etc {
     margin-bottom: 100px;
 }
 
-.queue {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
 }
 
-.queue a{
+.button a{
     font-family: 'Prompt', sans-serif;
     font-size: 20px;
-    background-color: #f9e0dc;
-    color: #595a5c;
+    background-color: #595a5c;
+    color: #f9e0dc;
     text-decoration: none;
     cursor: pointer;
     border-radius: 2rem;
-    width: 20%;
+    width: auto;
     padding: 15px 60px;
 }
 
-.queue a:hover {
-    background-color: #595a5c;
-    color: #fcd0c9;
+.button a#buttonprice{
+    margin-right: 30px;
+}
+
+.button a:hover {
+    background-color: #f9e0dc;
+    color: #595a5c;
     transition: all 0.3s ease-out ;
 }
 
-.queue i{
-    font-size: 80px;
-    padding: 20px;
-    color: #f9e0dc;
-}
-
-.queue i.light{
-    padding: 0px;
-    margin-left: -20px;
-    margin-right: -20px;
-    color: #fcd0c963;
-}
-
 @media screen and (max-width: 1500px) {
-    .queue a{
+    .button a{
         width: 25%;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .queue a{
+    .button a{
         width: 30%;
     }
 }
-@media screen and (max-width: 960px) {
-    .queue a{
+@media screen and (max-width: 750px) {
+    .button a{
         font-size: 20px;
         width: 50%;
     }
-    .queue i{
-        font-size: 50px;
-    }
+
 }
