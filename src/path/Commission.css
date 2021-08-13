@@ -485,8 +485,8 @@ hr.dashed#etc {
 .button a{
     font-family: 'Prompt', sans-serif;
     font-size: 20px;
-    background-color: #595a5c;
-    color: #f9e0dc;
+    background-color: #f9e0dc;
+    color: #595a5c;
     text-decoration: none;
     cursor: pointer;
     border-radius: 2rem;
@@ -499,8 +499,8 @@ hr.dashed#etc {
 }
 
 .button a:hover {
-    background-color: #f9e0dc;
-    color: #595a5c;
+    background-color: #595a5c;
+    color: #f9e0dc;
     transition: all 0.3s ease-out ;
 }
 
