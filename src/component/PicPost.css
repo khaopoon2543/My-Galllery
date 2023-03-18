@@ -21,35 +21,106 @@
 
 .pic-post-content {
     position: relative;
-    max-width: 1200px;
-    background-color: black;
+    top: 30px;
 }
 
 .pic-post-content img {
     display: block;
-    max-width: 100;
-    max-height: calc(100vh - 100px);
-    margin-left: auto;
-    margin-right: auto;
+    max-height: calc(100vh - 150px);
     transition: all 0.5s ease-out;
+    width: auto;
 }
 
-.pic-post-content h4 {
-    color: white;
+@media screen and (max-width: 640px) {
+    .pic-post-content img {
+        max-height: calc(100vh - 800px);
+    }
+    .pic-post-content img#over-size {
+        max-height: calc(100vh - 1000px);
+    }
+}
+
+/* .arrow-btn */
+.arrow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10px;
+}
+.arrow-btn btn {
+    border: none;
+    font-size: 30px;
+    background-color: var(--color-black-transparent);
+    color: var(--color-pink);
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+btn#next {
+    left: -15rem;
+    height: 100%;
+    width: 15rem;
+    border-radius: 10px 0 0 10px;
+}btn#back {
+    right: -15rem;
+    height: 100%;
+    width: 15rem;
+    border-radius: 0 10px 10px 0;
+}btn#close {
     display: none;
 }
 
-@media screen and (max-width: 1500px) {
-    .pic-post-content img {
-        max-height: calc(100vh - 200px);
-    }
+.arrow-btn btn:hover {
+    background-color: var(--color-black-dark);
+    color: var(--color-black);
+}.arrow-btn btn:hover > #btn-icon{
+    color: var(--color-pink);
+    font-size: 50px;
+    transition: all 0.3s ease-out ;
 }
 
-@media screen and (max-width: 400px) {
-    .pic-post-content img {
-        max-height: calc(100vh - 300px);
+@media screen and (max-width: 1200px) {
+    .arrow-btn {
+        margin-top: -5px;
+    }
+    .arrow-btn btn {
+        position: relative;
+    }
+    btn#next {
+        left: 0;
+        top: 0;
+        height: 5rem;
+        width: 100%;
+        border-radius: 0 0 0 10px;
+    }
+    btn#back {
+        right: 0;
+        height: 5rem;
+        width: 100%;
+        border-radius: 0 0 10px 0;
+    }
+    btn#close {
+        background-color: var(--color-white);
+        color: var(--color-black-dark);
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: right;
+        right: 0rem;
+        padding: 20px 30px;
+    }
+    /* btn:hover */
+    .arrow-btn btn#close:hover > #btn-icon{
+        color: var(--color-pink-dark);
+        font-size: 30px;
+    }
+    .arrow-btn btn:hover > #btn-icon{
+        font-size: 30px;
     }
 }
-

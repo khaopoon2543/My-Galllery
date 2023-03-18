@@ -5,6 +5,7 @@ import PicPost from '../component/PicPost';
 import picscolor from '../data/picscolor';
 import Navbar from '../component/Navbar/Navbar';
 import ReactGA from 'react-ga';
+import { RxDoubleArrowDown } from "react-icons/rx";
 
 function Color() {
 
@@ -13,54 +14,33 @@ function Color() {
         ReactGA.pageview('/color');
     }, [])
 
-    
-
     const [selectedPic, setselectedPic] = useState(null);
+    const [visible, setVisible] = useState(30);
+    function loadMore() { setVisible(visible + 30) }
 
+    //Open&Close Function onClick the picture
     function onPicOpenClick(thePic) {
         setselectedPic(thePic);
     }
-
     function onPicCloseClick() {
         setselectedPic(null);
     }
 
-    const picElements = picscolor.map((pic, index) => {
+    //PicItem
+    const picElements = picscolor.slice(0, visible).map((pic, index) => {
         return <PicItem key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
 
+    //PicPost
     let picPost = null;
     if (!!selectedPic) {
-        picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick}/>
+        picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick} page={"color"} type={"color"}/>
     }
-
-
-
-    const [postToShow, setpostToShow] = useState(null);
-
-    const postsPerPage = 40
-    let arrayForHoldingPosts = []
-    const ref = useRef(postsPerPage)
-    const loopWithSlice = (start, end) => {
-        const slicedPosts = picElements.slice(start, end)
-        arrayForHoldingPosts = arrayForHoldingPosts.concat(slicedPosts)
-        setpostToShow(arrayForHoldingPosts)
-    }
-    useEffect(() => {
-        loopWithSlice(0, postsPerPage)
-    }, [])
-
-    const handleShowMorePosts = () => {
-        loopWithSlice(ref, ref.current + postsPerPage)
-        ref.current += postsPerPage
-    }
-
 
     return (
         <div className="App">
             <Navbar/>
 
-            <br/>
             <div className="head-topic">
                 <h4>C O L O R F U L</h4>
                 <p>งานลงสีคัลเล่อฟูล (Color & Painting)</p>
@@ -68,17 +48,21 @@ function Color() {
             <br/>
 
             <div className="app-grid">
-                {postToShow}
+                {picElements}
             </div>
             {picPost}
 
             <br/>
 
-            <div className="center">
-                <button onClick={handleShowMorePosts}>LOAD MORE</button>
-            </div>
-
-            <br/><br/><br/>
+            {visible < picscolor.length &&
+                <div className="loadmore">
+                    <btn type='button' onClick={() => loadMore()}> 
+                        <RxDoubleArrowDown id="loadmore-icon"/>
+                        <span>Load More </span>
+                        <RxDoubleArrowDown id="loadmore-icon"/>
+                    </btn>
+                </div>
+            }
 
         </div>
     );

@@ -7,12 +7,12 @@
     margin: auto;
     max-width: 300px;
     height: auto;
-    padding: 30px;
+    padding: 20px;
 }
 
 .about-me {
     text-align: center;
-    color: #595a5c;
+    color: var(--color-black);
 }
 
 .about-me h4{
@@ -20,16 +20,17 @@
 }
 
 .about-me p{
+    font-family: 'Bai Jamjuree', sans-serif;
     font-size: 20px;
     margin-top: 20px;
-    padding-inline-start: 20%;
-    padding-inline-end: 20%;
+    padding-inline-start: 30%;
+    padding-inline-end: 30%;
 }
 
 .about-me i {
     font-size: 30px;
     padding: 10px;
-    color:#f8d7ce;
+    color:var(--color-pink-home);
 }
 
   

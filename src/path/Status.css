@@ -17,19 +17,19 @@ tr p {
 }
 
 p#type {
-    background-color: #f9e0dc;
-    color: #595a5c;
+    background-color: var(--color-pink);
+    color: var(--color-black);
 }
 p#scale {
     background-color: #807c7d25;
-    color: #595a5c;
+    color: var(--color-black);
 }
 
 p#status {
     padding: 10px;
     padding-top: 10px;
-    background-color: #595a5c;
-    color: #f9e0dc;
+    background-color: var(--color-black);
+    color: var(--color-pink);
 }
 
 @media screen and (max-width: 1250px) {

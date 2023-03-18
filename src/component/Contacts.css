@@ -1,0 +1,21 @@
+.contact {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.contact i{
+    font-size: 30px;
+    color: var(--color-pink);
+    background-color: var(--color-black);
+    border-radius: 50px;
+    padding: 20px;   
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.contact i:hover{
+    color: var(--color-pink-home);
+    background-color: var(--color-black-dark);
+    transition: all .3s;
+}

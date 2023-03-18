@@ -2,11 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Bai Jamjuree', sans-serif;
+  /* font-family: 'Bai Jamjuree', sans-serif; */
+  font-family: 'Tilt Neon', cursive;
   zoom: 100%;
 }
 
-@media screen and (max-width: 1600px) {  
+h4 {
+  font-family: 'Comfortaa', cursive;
+}
+
+@media screen and (max-width: 1920px) {  
   * {
     zoom: 97%;
   }

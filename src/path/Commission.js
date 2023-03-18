@@ -8,6 +8,7 @@ import picslines from '../data/picsComLINE';
 import picspainting from '../data/picsComPAINTING';
 import React , {useEffect} from 'react';
 import ReactGA from 'react-ga';
+import Contacts from '../component/Contacts';
 
 import './Commission.css';
 
@@ -19,6 +20,7 @@ function Commission() {
     }, [])
 
     const [selectedPic, setselectedPic] = useState(null);
+    const [picNumber, setPicNumber] = useState(null);
 
     function onPicOpenClick(thePic) {
         setselectedPic(thePic);
@@ -41,16 +43,17 @@ function Commission() {
         return <PicItemCMS key={index} pic={pic} onPicClick={onPicOpenClick}/>
     });
 
+
+
     let picPost = null;
-    if (!!selectedPic) {
-        picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick}/>
+    if (selectedPic) {
+        const selectedType = selectedPic.thumbnailURL.match(/(\w+)\/(\w+)/)[2]        
+        picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick} page={"commission"} type={selectedType}/>
     }
 
     return (
         <div className="App">
             <Navbar/>
-
-            <br/>
 
             <div className="head-topic">
                 <h4>C O M M I S S I O N</h4>
@@ -159,11 +162,11 @@ function Commission() {
                     <h1>DO & DON'T</h1>
                 </div>
                 <br/>
-                <div className="white candoit border-right">
+                <div className="white candoit">
                     <p><i class="fas fa-check"></i> Original Characters</p>
                     <p><i class="fas fa-check"></i> Fanarts</p>
                     <p><i class="fas fa-check"></i> NL / BL / GL</p>
-                    <p><i class="fas fa-star-of-life"></i> ทักมาสอบถามเพิ่มเติมก่อนได้เลยค่า</p>
+                    <p><i class="fas fa-star-of-life"></i> ทักมาสอบถามก่อนได้เลยค่า</p>
                 </div> 
                 <div className="red candoit">
                     <p><i class="fas fa-times"></i> R-18 / Gore</p>
@@ -255,11 +258,8 @@ function Commission() {
 
 
             <br/><hr class="dashed"></hr><br/><br/>
-            <div className="contact">
-                    <a href="https://twitter.com/kaopuny"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/mikokpy35"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100005184785636"><i class="fab fa-facebook-messenger"></i></a>
-            </div>
+
+            {Contacts}
 
         </div>
     );

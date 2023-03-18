@@ -1,23 +1,25 @@
 import "./Navbar.css";
-import React, { Component } from 'react';
-import { render } from "@testing-library/react";
+import { useState } from "react";
 import { MenuItems } from "./MenuItems";
 
-class Navbar extends Component {
-    state = { clicked: false }
+function Navbar() {
+    const [isClickMenuBar, setIsClickMenuBar] = useState(false);
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
+    function onClickMenuBar() {
+        if (!isClickMenuBar) {
+            setIsClickMenuBar(true)
+        } else {
+            setIsClickMenuBar(false)
+        }        
     }
 
-    render() {
-        return(
+    return(
             <nav className="NavbarItems">
                 <h4 className="navbar-logo">@KAOPUNY</h4>
-                <div className="menu-icon" onClick={this.handleClick} >
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                <div className="menu-icon" onClick={() => onClickMenuBar()} >
+                    <i className={isClickMenuBar ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                <ul className={isClickMenuBar ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
@@ -29,8 +31,7 @@ class Navbar extends Component {
                     })}
                 </ul>
             </nav>
-        )
-    }
+    )
 }
 
 export default Navbar;

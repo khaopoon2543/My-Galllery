@@ -13,8 +13,6 @@ function Line() {
         ReactGA.pageview('/line');
     }, [])
 
-
-
     const [selectedPic, setselectedPic] = useState(null);
 
     function onPicOpenClick(thePic) {
@@ -31,7 +29,7 @@ function Line() {
 
     let picPost = null;
     if (!!selectedPic) {
-        picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick}/>
+        picPost = <PicPost pic={selectedPic} onBgClick={onPicCloseClick} page={"line"} type={"line"}/>
     }
 
 
@@ -39,7 +37,6 @@ function Line() {
         <div className="App">
             <Navbar/>
             
-            <br/>
             <div className="head-topic">
                 <h4>S K E T C H</h4>
                 <p>งานรัฟงานเส้นอย่างคูล (Black White & Flat Color)</p>

@@ -1,11 +1,13 @@
 import "./PicItem.css";
+import { FiZoomIn } from "react-icons/fi";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function PicItem(props) {
     const { pic, onPicClick } = props;
     return (
         <div className="pic-item">
-            <img src={pic.thumbnailURL} onClick={() => {onPicClick(pic)}}/>
-            <h4>{pic.title}</h4>
+            <LazyLoadImage src={pic.thumbnailURL} onClick={() => {onPicClick(pic)}}/>
+            <div className="overlay" onClick={() => {onPicClick(pic)}}><FiZoomIn/></div>
         </div>
     )
 }

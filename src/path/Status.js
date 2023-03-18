@@ -28,7 +28,6 @@ export default function Status() {
         <div className="App">
             <Navbar/>
 
-            <br/>
             <div className="head-topic">
                 <h4>Q U E U E - S T A T U S</h4>
                 <p>ลำดับคิว & สถานะคอมมิชชั่น</p>

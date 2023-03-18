@@ -2,14 +2,14 @@
   text-align: center;
   margin-top: 30px;
   font-size: 40px;
-  color: #595a5c;
+  color: var(--color-black);
 }
 
 .head-topic p{
   text-align: center;
   font-size: 20px;
   font-family: 'Kanit', sans-serif;
-  color: #595a5c;
+  color: var(--color-black);
 }
 
 .app-grid {
@@ -25,32 +25,39 @@
   padding: 30px;
   padding-inline-start: 15%;
   padding-inline-end: 15%;
-
 }
 
-.center {
+.loadmore {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.loadmore span{
+  font-size: 40px;
+}
+#loadmore-icon {
+  font-size: 40px;
+  margin: 0px 30px 0 20px;
+  margin-bottom: -10px;
+  color: var(--color-black);
 }
 
-button {
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: #595a5c;
-  color: #f9e0dc;
+.loadmore btn {
+  font-size: 30px;
+  background-color: var(--color-black-dark);
+  color: var(--color-pink);
   cursor: pointer;
-  border-radius: 25px;
-  width: 20%;
-  padding: 15px 60px;
+  padding-top: 50px;
+  width: 100%;
+  height: 200px;
+  border-radius: 50px 50px 0 0;
+  margin: 0 15% 0 15%;
 }
-
-button:hover {
-  background-color: #f9e0dc;
-  color: #595a5c;
+.loadmore btn:hover {
+  background-color: var(--color-pink);
+  color: var(--color-black);
   transition: all 0.3s ease-out ;
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -66,6 +73,7 @@ button:hover {
       grid-template-columns: 1fr 1fr ;
   }
 }
+
 
 
 
