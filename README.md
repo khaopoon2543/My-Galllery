@@ -1,6 +1,6 @@
 # My-Gallery
-The Gallery's link is https://kaopuny.netlify.app/
+The Gallery's link is https://kaopuny.netlify.app 🎨💗
 
-This website collects my lovely paintings.
+My paintings and commissions information are collected on the website.
 
 ![](readme-new-mygallery.gif)
