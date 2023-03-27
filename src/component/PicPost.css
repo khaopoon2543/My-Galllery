@@ -1,6 +1,6 @@
 .pic-post {
     position: fixed;
-    top: 0;
+    top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -19,25 +19,16 @@
     right: 0;
 }
 
-.pic-post-content {
+.pic-post-content-image {
     position: relative;
-    top: 30px;
+    margin-top: 50px;
 }
 
-.pic-post-content img {
+.pic-post-content-image img {
     display: block;
-    max-height: calc(100vh - 150px);
     transition: all 0.5s ease-out;
-    width: auto;
-}
-
-@media screen and (max-width: 640px) {
-    .pic-post-content img {
-        max-height: calc(100vh - 800px);
-    }
-    .pic-post-content img#over-size {
-        max-height: calc(100vh - 1000px);
-    }
+    width: 100%;
+    max-height: calc(90vh);
 }
 
 /* .arrow-btn */
@@ -51,6 +42,7 @@
     border: none;
     font-size: 30px;
     background-color: var(--color-black-transparent);
+    backdrop-filter: saturate(180%) blur(10px);
     color: var(--color-pink);
     cursor: pointer;
     border-radius: 0px;
@@ -62,13 +54,14 @@
     justify-content: center;
     align-items: center;
 }
+  
 btn#next {
-    left: -15rem;
+    left: 0rem;
     height: 100%;
     width: 15rem;
     border-radius: 10px 0 0 10px;
 }btn#back {
-    right: -15rem;
+    right: 0rem;
     height: 100%;
     width: 15rem;
     border-radius: 0 10px 10px 0;
@@ -86,6 +79,12 @@ btn#next {
 }
 
 @media screen and (max-width: 1200px) {
+    .pic-post-content-image {
+        margin-top: 0px;
+    }
+    .pic-post-content {
+        margin-top: 50px;
+    }
     .arrow-btn {
         margin-top: -5px;
     }
@@ -124,3 +123,5 @@ btn#next {
         font-size: 30px;
     }
 }
+
+

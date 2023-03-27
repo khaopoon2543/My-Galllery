@@ -15,6 +15,8 @@
 .app-grid {
   display: grid;
   justify-content: center;
+  align-items: center;
+
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 16px;
@@ -22,7 +24,6 @@
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
   padding-inline-start: 15%;
   padding-inline-end: 15%;
 }
@@ -36,17 +37,11 @@
 .loadmore span{
   font-size: 40px;
 }
-#loadmore-icon {
-  font-size: 40px;
-  margin: 0px 30px 0 20px;
-  margin-bottom: -10px;
-  color: var(--color-black);
-}
 
 .loadmore btn {
   font-size: 30px;
-  background-color: var(--color-black-dark);
-  color: var(--color-pink);
+  background-color: var(--color-pink);
+  color: var(--color-black);
   cursor: pointer;
   padding-top: 50px;
   width: 100%;
@@ -55,8 +50,8 @@
   margin: 0 15% 0 15%;
 }
 .loadmore btn:hover {
-  background-color: var(--color-pink);
-  color: var(--color-black);
+  background-color: var(--color-black-dark);
+  color: var(--color-pink);
   transition: all 0.3s ease-out ;
 }
 

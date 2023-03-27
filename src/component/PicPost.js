@@ -48,30 +48,30 @@ function PicPost(props) {
                 </div>
 
                 {/* <img src={selectedPic} id={checkOverSizePic(picNumber)}/> */}
-                <LazyLoadImage src={selectedPic} alt="Image Alt" effect="blur"/>
+                <div className="pic-post-content-image">
+                    <LazyLoadImage src={selectedPic} alt="Image Alt" effect="blur"/>
+                </div>
 
                 <div className="arrow-btn">
-
-                {page === "commission" ?
-                <>
-                    {picNumber-1 > 0 &&
-                        <btn id="next" onClick={() => onClickBackNextPic("back")}><VscArrowLeft id="btn-icon"/></btn>
+                    {page === "commission" ?
+                    <>
+                        {picNumber-1 > 0 &&
+                            <btn id="next" onClick={() => onClickBackNextPic("back")}><VscArrowLeft id="btn-icon"/></btn>
+                        }
+                        {picNumber+1 <= checkNumberPicPage(page) &&
+                            <btn id="back" onClick={() => onClickBackNextPic("next")}><VscArrowRight id="btn-icon"/></btn>
+                        }
+                    </>
+                    :
+                    <>
+                        {picNumber+1 <= checkNumberPicPage(page) &&
+                            <btn id="next" onClick={() => onClickBackNextPic("next")}><VscArrowLeft id="btn-icon"/></btn>
+                        }
+                        {picNumber-1 > 0 &&
+                            <btn id="back" onClick={() => onClickBackNextPic("back")}><VscArrowRight id="btn-icon"/></btn>
+                        }
+                    </>
                     }
-                    {picNumber+1 <= checkNumberPicPage(page) &&
-                        <btn id="back" onClick={() => onClickBackNextPic("next")}><VscArrowRight id="btn-icon"/></btn>
-                    }
-                </>
-                :
-                <>
-                    {picNumber+1 <= checkNumberPicPage(page) &&
-                        <btn id="next" onClick={() => onClickBackNextPic("next")}><VscArrowLeft id="btn-icon"/></btn>
-                    }
-                    {picNumber-1 > 0 &&
-                        <btn id="back" onClick={() => onClickBackNextPic("back")}><VscArrowRight id="btn-icon"/></btn>
-                    }
-                </>
-                }
-
                 </div>
 
             </div>

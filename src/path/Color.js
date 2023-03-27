@@ -5,7 +5,6 @@ import PicPost from '../component/PicPost';
 import picscolor from '../data/picscolor';
 import Navbar from '../component/Navbar/Navbar';
 import ReactGA from 'react-ga';
-import { RxDoubleArrowDown } from "react-icons/rx";
 
 function Color() {
 
@@ -57,9 +56,7 @@ function Color() {
             {visible < picscolor.length &&
                 <div className="loadmore">
                     <btn type='button' onClick={() => loadMore()}> 
-                        <RxDoubleArrowDown id="loadmore-icon"/>
                         <span>Load More </span>
-                        <RxDoubleArrowDown id="loadmore-icon"/>
                     </btn>
                 </div>
             }
